@@ -1,0 +1,1207 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>frontend documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">frontend documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  AddExperienceComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/components/user-profile/user-skill/add-experience/add-experience.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-add-experience</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./add-experience.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./add-experience.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#data" >data</a>
+                            </li>
+                            <li>
+                                <a href="#flagReferee" >flagReferee</a>
+                            </li>
+                            <li>
+                                <a href="#refereeName" >refereeName</a>
+                            </li>
+                            <li>
+                                <a href="#skillName" >skillName</a>
+                            </li>
+                            <li>
+                                <a href="#skillsForm" >skillsForm</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#addReferences" >addReferences</a>
+                            </li>
+                            <li>
+                                <a href="#checkReferee" >checkReferee</a>
+                            </li>
+                            <li>
+                                <a href="#checkSkill" >checkSkill</a>
+                            </li>
+                            <li>
+                                <a href="#closeDialog" >closeDialog</a>
+                            </li>
+                            <li>
+                                <a href="#newReference" >newReference</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#openSnackBar" >openSnackBar</a>
+                            </li>
+                            <li>
+                                <a href="#removeReferences" >removeReferences</a>
+                            </li>
+                            <li>
+                                <a href="#saveSkill" >saveSkill</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#references" >references</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(data, userService: <a href="../injectables/UserProfileService.html" target="_self">UserProfileService</a>, fb: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, _snackBar: MatSnackBar, dialogRef: <a href="../components/AddExperienceComponent.html" target="_self">MatDialogRef&lt;AddExperienceComponent&gt;</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/components/user-profile/user-skill/add-experience/add-experience.component.ts:17</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>data</td>
+                                                  
+                                                        <td>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>userService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UserProfileService.html" target="_self" >UserProfileService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>fb</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_snackBar</td>
+                                                  
+                                                        <td>
+                                                                    <code>MatSnackBar</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dialogRef</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../components/AddExperienceComponent.html" target="_self" >MatDialogRef&lt;AddExperienceComponent&gt;</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addReferences"></a>
+                    <span class="name">
+                        <span ><b>addReferences</b></span>
+                        <a href="#addReferences"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addReferences()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="76"
+                            class="link-to-prism">src/app/components/user-profile/user-skill/add-experience/add-experience.component.ts:76</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkReferee"></a>
+                    <span class="name">
+                        <span ><b>checkReferee</b></span>
+                        <a href="#checkReferee"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkReferee()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="63"
+                            class="link-to-prism">src/app/components/user-profile/user-skill/add-experience/add-experience.component.ts:63</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkSkill"></a>
+                    <span class="name">
+                        <span ><b>checkSkill</b></span>
+                        <a href="#checkSkill"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkSkill(value)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="55"
+                            class="link-to-prism">src/app/components/user-profile/user-skill/add-experience/add-experience.component.ts:55</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>value</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="closeDialog"></a>
+                    <span class="name">
+                        <span ><b>closeDialog</b></span>
+                        <a href="#closeDialog"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>closeDialog()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="72"
+                            class="link-to-prism">src/app/components/user-profile/user-skill/add-experience/add-experience.component.ts:72</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="newReference"></a>
+                    <span class="name">
+                        <span ><b>newReference</b></span>
+                        <a href="#newReference"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>newReference()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="35"
+                            class="link-to-prism">src/app/components/user-profile/user-skill/add-experience/add-experience.component.ts:35</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="44"
+                            class="link-to-prism">src/app/components/user-profile/user-skill/add-experience/add-experience.component.ts:44</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openSnackBar"></a>
+                    <span class="name">
+                        <span ><b>openSnackBar</b></span>
+                        <a href="#openSnackBar"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openSnackBar(msg)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="50"
+                            class="link-to-prism">src/app/components/user-profile/user-skill/add-experience/add-experience.component.ts:50</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>msg</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removeReferences"></a>
+                    <span class="name">
+                        <span ><b>removeReferences</b></span>
+                        <a href="#removeReferences"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>removeReferences(i: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="79"
+                            class="link-to-prism">src/app/components/user-profile/user-skill/add-experience/add-experience.component.ts:79</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>i</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="saveSkill"></a>
+                    <span class="name">
+                        <span ><b>saveSkill</b></span>
+                        <a href="#saveSkill"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>saveSkill()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="83"
+                            class="link-to-prism">src/app/components/user-profile/user-skill/add-experience/add-experience.component.ts:83</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="data"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>data</b></span>
+                        <a href="#data"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @Inject(MAT_DIALOG_DATA)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/components/user-profile/user-skill/add-experience/add-experience.component.ts:19</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="flagReferee"></a>
+                    <span class="name">
+                        <span ><b>flagReferee</b></span>
+                        <a href="#flagReferee"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank" >Boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/components/user-profile/user-skill/add-experience/add-experience.component.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="refereeName"></a>
+                    <span class="name">
+                        <span ><b>refereeName</b></span>
+                        <a href="#refereeName"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>any[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/components/user-profile/user-skill/add-experience/add-experience.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="skillName"></a>
+                    <span class="name">
+                        <span ><b>skillName</b></span>
+                        <a href="#skillName"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>any[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/components/user-profile/user-skill/add-experience/add-experience.component.ts:14</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="skillsForm"></a>
+                    <span class="name">
+                        <span ><b>skillsForm</b></span>
+                        <a href="#skillsForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/components/user-profile/user-skill/add-experience/add-experience.component.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="references"></a>
+                        <span class="name"><b>references</b><a href="#references"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>references()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/components/user-profile/user-skill/add-experience/add-experience.component.ts:31</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+</section>
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, Inject, OnInit } from &#x27;@angular/core&#x27;;
+import { FormArray, FormBuilder, FormGroup, Validators } from &#x27;@angular/forms&#x27;;
+import { MatDialogRef, MAT_DIALOG_DATA } from &#x27;@angular/material/dialog&#x27;;
+import { MatSnackBar } from &#x27;@angular/material/snack-bar&#x27;;
+import { UserProfileService } from &#x27;src/app/services/user-profile.service&#x27;;
+
+@Component({
+  selector: &#x27;app-add-experience&#x27;,
+  templateUrl: &#x27;./add-experience.component.html&#x27;,
+  styleUrls: [&#x27;./add-experience.component.css&#x27;]
+})
+export class AddExperienceComponent implements OnInit {
+
+  skillName:any[]&#x3D;[];
+  refereeName:any[]&#x3D;[];
+  skillsForm: FormGroup;
+  flagReferee:Boolean&#x3D; false;
+
+  constructor(@Inject(MAT_DIALOG_DATA) public data,private userService: UserProfileService, private fb:FormBuilder,private _snackBar: MatSnackBar,private dialogRef: MatDialogRef&lt;AddExperienceComponent&gt;) { 
+    this.skillsForm &#x3D; this.fb.group({
+      _id: [&#x27;&#x27;],
+      name: [&#x27;&#x27;, Validators.required],
+      references: this.fb.array([
+        //this.newReference()
+      ]),
+      experience:[&#x27;&#x27;,Validators.required]
+    })
+    
+  }
+
+  get references() : FormArray {
+    return this.skillsForm.get(&quot;references&quot;) as FormArray
+  }
+
+  newReference(): FormGroup {
+    return this.fb.group({
+      referee:[&#x27;&#x27;, Validators.required],
+      relationship:[&#x27;&#x27;, Validators.required],
+      _id: [&#x27;&#x27;],
+      status: &quot;pending&quot;
+    })
+  }
+
+  ngOnInit(): void {
+    console.log(this.data.exp)
+    this.data.exp.forEach(element &#x3D;&gt; {
+      this.skillName.push(element.name)
+    });
+  }
+  openSnackBar(msg) {
+    this._snackBar.open(msg, &#x27;End now&#x27;, {
+      duration: 5500,
+    });
+  }
+  checkSkill(value){
+    if(this.skillName.includes(value.toLowerCase())){
+      this.openSnackBar(&quot;you can not add same skill twice&quot;)
+      return false
+    }else{
+      return true
+    }
+  }
+  checkReferee(){
+    if(new Set(this.refereeName).size !&#x3D;&#x3D; this.refereeName.length ){
+      this.openSnackBar(&quot;you can not add same referee twice&quot;)
+      return false
+    }else{
+      return true
+    }
+  }
+
+  closeDialog(){
+    this.dialogRef.close(false);
+}
+
+  addReferences(): void {
+    this.references.push(this.newReference())
+  }
+  removeReferences(i:number) {
+    this.references.removeAt(i);
+  }
+
+  saveSkill(){
+    this.refereeName &#x3D; []
+    this.references.value.forEach(element &#x3D;&gt; {
+      this.refereeName.push(element.referee)
+    });
+    if(this.checkSkill(this.skillsForm.value.name) &amp;&amp; this.checkReferee()){
+      this.dialogRef.close(this.skillsForm.value);
+      console.log(this.skillsForm.value)
+      this.userService.sendSkills(this.skillsForm.value).subscribe(
+               (success) &#x3D;&gt; {
+                 console.log(success);
+      
+               },
+               (err) &#x3D;&gt; { 
+                 console.log(err)
+               }
+             )
+    }else{
+      console.log(&quot;error&quot;)
+    }
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;mat-card class&#x3D;&quot;container-fluid&quot;&gt;
+    &lt;div class&#x3D;&quot;d-flex flex-row-reverse&quot;&gt;
+        &lt;div class&#x3D;&quot;p-2&quot;&gt;
+            &lt;mat-icon id&#x3D;&quot;close-icon&quot; style&#x3D;&quot;color: red;&quot; (click)&#x3D;&quot;closeDialog()&quot;&gt;close&lt;/mat-icon&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;form [formGroup]&#x3D;&quot;skillsForm&quot; (ngSubmit)&#x3D;&quot;saveSkill()&quot;&gt; 
+   
+            &lt;div class&#x3D;&quot;row&quot;&gt;
+            &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+                &lt;mat-form-field appearance&#x3D;&quot;outline&quot;&gt;
+                    &lt;mat-label for&#x3D;&quot;name&quot;&gt;Skill Name&lt;/mat-label&gt;
+                    &lt;input formControlName&#x3D;&quot;name&quot; id&#x3D;&#x27;name&#x27; matInput placeholder&#x3D;&quot;Skill name&quot; &gt;
+                &lt;/mat-form-field&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;col-md-5&quot;&gt;    
+                &lt;mat-form-field appearance&#x3D;&quot;outline&quot;&gt;
+                    &lt;mat-label for &#x3D; &#x27;experience&#x27; &gt;No. of Years of Usage&lt;/mat-label&gt;
+                    &lt;input formControlName&#x3D;&#x27;experience&#x27; id&#x3D;&#x27;experience&#x27; matInput placeholder&#x3D;&quot;Skill name&quot; &gt;
+                &lt;/mat-form-field&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div formArrayName&#x3D;&quot;references&quot; *ngFor &#x3D; &quot;let reference of references.controls; let i &#x3D; index&quot;&gt;
+            &lt;div [formGroupName] &#x3D; &quot;i&quot;&gt;
+                    &lt;div class&#x3D;&quot;row&quot;&gt;
+                        &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+                            &lt;mat-form-field appearance&#x3D;&quot;outline&quot;&gt;
+                                &lt;mat-label for&#x3D;&quot;referee&quot; &gt;Referee&lt;/mat-label&gt;
+                                &lt;input formControlName&#x3D;&quot;referee&quot; id&#x3D; &quot;referee&quot; matInput placeholder&#x3D;&quot;Search referee&quot; &gt;
+                            &lt;/mat-form-field&gt;
+                        &lt;/div&gt;
+                        &lt;div class&#x3D;&quot;col-md-5&quot;&gt;
+                            &lt;mat-form-field appearance&#x3D;&quot;outline&quot;&gt;
+                                &lt;mat-label for&#x3D;&quot;relationship&quot; &gt;Relationship&lt;/mat-label&gt;
+                                &lt;input formControlName&#x3D;&quot;relationship&quot; id&#x3D;&quot;relationship&quot; matInput placeholder&#x3D;&quot;Relationship&quot; &gt;
+                            &lt;/mat-form-field&gt;
+                        &lt;/div&gt;
+                        &lt;div class&#x3D;&quot;col-md-1 pt-2&quot;&gt;
+                            &lt;button mat-raised-button color&#x3D;&quot;warn&quot; (click)&#x3D;&quot;removeReferences(i)&quot;&gt;X&lt;/button&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;d-flex flex-row-reverse&quot;&gt;
+            &lt;div class&#x3D;&quot;p-2&quot;&gt;
+                &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-outline-primary&quot; (click)&#x3D;&quot;addReferences()&quot;&gt;+ Add References&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+
+
+
+&lt;!-- add more skill --&gt;
+
+&lt;div class&#x3D;&quot;d-flex flex-row-reverse&quot;&gt;
+    &lt;div class&#x3D;&quot;p-2&quot;&gt;
+        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-primary&quot; (click)&#x3D;&quot;saveSkill()&quot; &gt;Save Skill&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+    
+ &lt;/form&gt; 
+&lt;/mat-card&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./add-experience.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">#close-icon:hover{
+    cursor: pointer;
+    }</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><mat-card class="container-fluid">    <div class="d-flex flex-row-reverse">        <div class="p-2">            <mat-icon id="close-icon" style="color: red;" (click)="closeDialog()">close</mat-icon>        </div>    </div><form [formGroup]="skillsForm" (ngSubmit)="saveSkill()">                <div class="row">            <div class="col-md-6">                <mat-form-field appearance="outline">                    <mat-label for="name">Skill Name</mat-label>                    <input formControlName="name" id=\'name\' matInput placeholder="Skill name" >                </mat-form-field>            </div>            <div class="col-md-5">                    <mat-form-field appearance="outline">                    <mat-label for = \'experience\' >No. of Years of Usage</mat-label>                    <input formControlName=\'experience\' id=\'experience\' matInput placeholder="Skill name" >                </mat-form-field>            </div>        </div>        <div formArrayName="references" *ngFor = "let reference of references.controls; let i = index">            <div [formGroupName] = "i">                    <div class="row">                        <div class="col-md-6">                            <mat-form-field appearance="outline">                                <mat-label for="referee" >Referee</mat-label>                                <input formControlName="referee" id= "referee" matInput placeholder="Search referee" >                            </mat-form-field>                        </div>                        <div class="col-md-5">                            <mat-form-field appearance="outline">                                <mat-label for="relationship" >Relationship</mat-label>                                <input formControlName="relationship" id="relationship" matInput placeholder="Relationship" >                            </mat-form-field>                        </div>                        <div class="col-md-1 pt-2">                            <button mat-raised-button color="warn" (click)="removeReferences(i)">X</button>                        </div>                    </div>            </div>        </div>        <div class="d-flex flex-row-reverse">            <div class="p-2">                <button type="button" class="btn btn-outline-primary" (click)="addReferences()">+ Add References</button>            </div>        </div><!-- add more skill --><div class="d-flex flex-row-reverse">    <div class="p-2">        <button type="button" class="btn btn-primary" (click)="saveSkill()" >Save Skill</button>    </div></div>     </form> </mat-card></div>'
+    var COMPONENTS = [{'name': 'AboutCandidateComponent', 'selector': 'app-about-candidate'},{'name': 'AboutJobComponent', 'selector': 'app-about-job'},{'name': 'AddExperienceComponent', 'selector': 'app-add-experience'},{'name': 'AllJobsComponent', 'selector': 'app-all-jobs'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CompanyListComponent', 'selector': 'app-company-list'},{'name': 'CompanyMenuComponent', 'selector': 'app-company-menu'},{'name': 'ConfirmDialogComponent', 'selector': 'app-confirm-dialog'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'CreateCompanyComponent', 'selector': 'app-create-company'},{'name': 'CreateNewEmailComponent', 'selector': 'app-create-new-email'},{'name': 'CreateNewPhoneComponent', 'selector': 'app-create-new-phone'},{'name': 'CreatePreferredJobLocationComponent', 'selector': 'app-create-preferred-job-location'},{'name': 'CustomerListComponent', 'selector': 'app-customer-list'},{'name': 'EditExperienceComponent', 'selector': 'app-edit-experience'},{'name': 'EmployeeAccountComponent', 'selector': 'app-employee-account'},{'name': 'EmployerAccountComponent', 'selector': 'app-employer-account'},{'name': 'EmployerQuestionsComponent', 'selector': 'app-employer-questions'},{'name': 'ErrordialogComponent', 'selector': 'app-errordialog'},{'name': 'ExistingReferralComponent', 'selector': 'app-existing-referral'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'ForgetpasswordComponent', 'selector': 'app-forgetpassword'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HomePageComponent', 'selector': 'app-home-page'},{'name': 'InterviewScheduleComponent', 'selector': 'app-interview-schedule'},{'name': 'IntroVideoComponent', 'selector': 'app-intro-video'},{'name': 'JobsInterestedInComponent', 'selector': 'app-jobs-interested-in'},{'name': 'KeyPointsComponent', 'selector': 'app-key-points'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'NavbarComponent', 'selector': 'app-navbar'},{'name': 'PendingReferralRequestComponent', 'selector': 'app-pending-referral-request'},{'name': 'PostJobComponent', 'selector': 'app-post-job'},{'name': 'PreferredJobLocationComponent', 'selector': 'app-preferred-job-location'},{'name': 'RefereeAccountComponent', 'selector': 'app-referee-account'},{'name': 'RefereeScoreComponent', 'selector': 'app-referee-score'},{'name': 'ReferralBonusComponent', 'selector': 'app-referral-bonus'},{'name': 'ReferralReviewPageComponent', 'selector': 'app-referral-review-page'},{'name': 'ReferralReviewRequestComponent', 'selector': 'app-referral-review-request'},{'name': 'ResetpasswordComponent', 'selector': 'app-resetpassword'},{'name': 'SavedJobsComponent', 'selector': 'app-saved-jobs'},{'name': 'SearchAgentComponent', 'selector': 'app-search-agent'},{'name': 'SignupComponent', 'selector': 'app-signup'},{'name': 'SignupconfirmationComponent', 'selector': 'app-signupconfirmation'},{'name': 'SignupLandingComponent', 'selector': 'app-signup-landing'},{'name': 'SystemVideoComponent', 'selector': 'app-system-video'},{'name': 'TestAndOtherDocumentsComponent', 'selector': 'app-test-and-other-documents'},{'name': 'UserDashboardComponent', 'selector': 'app-user-dashboard'},{'name': 'UserEducationComponent', 'selector': 'app-user-education'},{'name': 'UserMenuComponent', 'selector': 'app-user-menu'},{'name': 'UserNamePhotoComponent', 'selector': 'app-user-name-photo'},{'name': 'UserPersonalInfoComponent', 'selector': 'app-user-personal-info'},{'name': 'UserProfileComponent', 'selector': 'app-user-profile'},{'name': 'UserSkillComponent', 'selector': 'app-user-skill'},{'name': 'UserWorkExperienceComponent', 'selector': 'app-user-work-experience'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'AddExperienceComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'AddExperienceComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       
+       <script type="module" src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

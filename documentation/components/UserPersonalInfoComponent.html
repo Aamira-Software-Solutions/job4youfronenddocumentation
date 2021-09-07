@@ -1,0 +1,1406 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>frontend documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">frontend documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  UserPersonalInfoComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/components/user-profile/user-personal-info/user-personal-info.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-user-personal-info</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./user-personal-info.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./user-personal-info.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#data" >data</a>
+                            </li>
+                            <li>
+                                <a href="#personalinfoForm" >personalinfoForm</a>
+                            </li>
+                            <li>
+                                <a href="#relatedList" >relatedList</a>
+                            </li>
+                            <li>
+                                <a href="#submitted" >submitted</a>
+                            </li>
+                            <li>
+                                <a href="#username" >username</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#addEmail" >addEmail</a>
+                            </li>
+                            <li>
+                                <a href="#addPhone" >addPhone</a>
+                            </li>
+                            <li>
+                                <a href="#newEmail" >newEmail</a>
+                            </li>
+                            <li>
+                                <a href="#newPhone" >newPhone</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#removeEmail" >removeEmail</a>
+                            </li>
+                            <li>
+                                <a href="#removePhone" >removePhone</a>
+                            </li>
+                            <li>
+                                <a href="#savePersonalInfo" >savePersonalInfo</a>
+                            </li>
+                            <li>
+                                <a href="#setPersonalInfo" >setPersonalInfo</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#personalinfoFormControl" >personalinfoFormControl</a>
+                                </li>
+                                <li>
+                                    <a href="#phone" >phone</a>
+                                </li>
+                                <li>
+                                    <a href="#email" >email</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(fb: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, userService: <a href="../injectables/UserProfileService.html" target="_self">UserProfileService</a>, confirmDialog: <a href="../injectables/DialogService.html" target="_self">DialogService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/components/user-profile/user-personal-info/user-personal-info.component.ts:18</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>fb</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>userService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UserProfileService.html" target="_self" >UserProfileService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>confirmDialog</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/DialogService.html" target="_self" >DialogService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addEmail"></a>
+                    <span class="name">
+                        <span ><b>addEmail</b></span>
+                        <a href="#addEmail"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addEmail()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="95"
+                            class="link-to-prism">src/app/components/user-profile/user-personal-info/user-personal-info.component.ts:95</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addPhone"></a>
+                    <span class="name">
+                        <span ><b>addPhone</b></span>
+                        <a href="#addPhone"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addPhone()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="98"
+                            class="link-to-prism">src/app/components/user-profile/user-personal-info/user-personal-info.component.ts:98</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="newEmail"></a>
+                    <span class="name">
+                        <span ><b>newEmail</b></span>
+                        <a href="#newEmail"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>newEmail()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="84"
+                            class="link-to-prism">src/app/components/user-profile/user-personal-info/user-personal-info.component.ts:84</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="newPhone"></a>
+                    <span class="name">
+                        <span ><b>newPhone</b></span>
+                        <a href="#newPhone"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>newPhone()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="73"
+                            class="link-to-prism">src/app/components/user-profile/user-personal-info/user-personal-info.component.ts:73</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="65"
+                            class="link-to-prism">src/app/components/user-profile/user-personal-info/user-personal-info.component.ts:65</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removeEmail"></a>
+                    <span class="name">
+                        <span ><b>removeEmail</b></span>
+                        <a href="#removeEmail"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>removeEmail(i: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="101"
+                            class="link-to-prism">src/app/components/user-profile/user-personal-info/user-personal-info.component.ts:101</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>i</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removePhone"></a>
+                    <span class="name">
+                        <span ><b>removePhone</b></span>
+                        <a href="#removePhone"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>removePhone(i: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="104"
+                            class="link-to-prism">src/app/components/user-profile/user-personal-info/user-personal-info.component.ts:104</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>i</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="savePersonalInfo"></a>
+                    <span class="name">
+                        <span ><b>savePersonalInfo</b></span>
+                        <a href="#savePersonalInfo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>savePersonalInfo()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="154"
+                            class="link-to-prism">src/app/components/user-profile/user-personal-info/user-personal-info.component.ts:154</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setPersonalInfo"></a>
+                    <span class="name">
+                        <span ><b>setPersonalInfo</b></span>
+                        <a href="#setPersonalInfo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setPersonalInfo()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="108"
+                            class="link-to-prism">src/app/components/user-profile/user-personal-info/user-personal-info.component.ts:108</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="data"></a>
+                    <span class="name">
+                        <span ><b>data</b></span>
+                        <a href="#data"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/components/user-profile/user-personal-info/user-personal-info.component.ts:14</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="personalinfoForm"></a>
+                    <span class="name">
+                        <span ><b>personalinfoForm</b></span>
+                        <a href="#personalinfoForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/components/user-profile/user-personal-info/user-personal-info.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="relatedList"></a>
+                    <span class="name">
+                        <span ><b>relatedList</b></span>
+                        <a href="#relatedList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[&#x27;personal&#x27;, &#x27;referee&#x27;, &#x27;both&#x27;]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/components/user-profile/user-personal-info/user-personal-info.component.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="submitted"></a>
+                    <span class="name">
+                        <span ><b>submitted</b></span>
+                        <a href="#submitted"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/components/user-profile/user-personal-info/user-personal-info.component.ts:18</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="username"></a>
+                    <span class="name">
+                        <span ><b>username</b></span>
+                        <a href="#username"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/components/user-profile/user-personal-info/user-personal-info.component.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="personalinfoFormControl"></a>
+                        <span class="name"><b>personalinfoFormControl</b><a href="#personalinfoFormControl"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>personalinfoFormControl()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="69" class="link-to-prism">src/app/components/user-profile/user-personal-info/user-personal-info.component.ts:69</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="phone"></a>
+                        <span class="name"><b>phone</b><a href="#phone"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>phone()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="80" class="link-to-prism">src/app/components/user-profile/user-personal-info/user-personal-info.component.ts:80</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="email"></a>
+                        <span class="name"><b>email</b><a href="#email"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>email()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="91" class="link-to-prism">src/app/components/user-profile/user-personal-info/user-personal-info.component.ts:91</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+</section>
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { FormControl, FormGroup,  Validators, FormArray, FormBuilder, Form} from &#x27;@angular/forms&#x27;
+import { DialogService } from &#x27;src/app/services/dialog.service&#x27;;
+
+import {  UserProfileService } from &quot;src/app/services/user-profile.service&quot;
+ 
+@Component({
+  selector: &#x27;app-user-personal-info&#x27;,
+  templateUrl: &#x27;./user-personal-info.component.html&#x27;,
+  styleUrls: [&#x27;./user-personal-info.component.css&#x27;]
+})
+export class UserPersonalInfoComponent implements OnInit {
+
+  data: any;
+  personalinfoForm: FormGroup;
+  username: string;
+  relatedList: any &#x3D; [&#x27;personal&#x27;, &#x27;referee&#x27;, &#x27;both&#x27;];
+  submitted &#x3D; false;
+
+  
+  
+
+  constructor(private fb: FormBuilder, private userService: UserProfileService, private confirmDialog: DialogService) {
+
+    this.userService.getPersonalInfo().subscribe(
+       (success)&#x3D;&gt;{
+         this.data &#x3D; success.data
+         //console.log(success)
+        
+
+         this.setPersonalInfo()
+       }, 
+       (err)&#x3D;&gt;{
+         console.log(err)
+       }
+    )
+
+    this.personalinfoForm &#x3D; this.fb.group({
+      name: this.fb.group({
+        first: [&#x27;&#x27;, Validators.required],
+        last: [&#x27;&#x27;, Validators.required]
+      }),
+      dob: [&#x27;&#x27;],
+      contact:this.fb.group({
+        phone:this.fb.array([
+          //this.newPhone()
+        ]),
+        email:this.fb.array([
+         //this.newEmail()
+        ])
+      }),
+      password:[&#x27;&#x27;],
+      address:this.fb.group({
+        street: [&#x27;&#x27;],
+        city: [&#x27;&#x27;],
+        postal: [&#x27;&#x27;],
+        province: [&#x27;&#x27;],
+        country: [&#x27;&#x27;],  
+      }),
+      jobSearching: [&#x27;&#x27;],
+      username: [&#x27;&#x27;]
+    });
+   }
+
+  ngOnInit(): void {
+    
+  }
+
+  get personalinfoFormControl(){
+    return this.personalinfoForm.controls;
+  }
+
+  newPhone(): FormGroup{
+    return this.fb.group({
+      number: [&#x27;&#x27;,Validators.required],
+      related: [&#x27;&#x27;,Validators.required]
+    })
+  }
+
+  get phone(): FormArray{
+    return this.personalinfoForm.controls.contact.get(&quot;phone&quot;) as FormArray;
+  }
+
+  newEmail(): FormGroup{
+    return this.fb.group({
+      address: [&#x27;&#x27;,[Validators.required ,Validators.email]],
+      related: [&#x27;&#x27;,Validators.required]
+    })
+  }
+
+  get email(): FormArray{
+    return this.personalinfoForm.controls.contact.get(&quot;email&quot;) as FormArray;
+  }
+
+  addEmail(): void{
+    this.email.push(this.newEmail())
+  }
+  addPhone(): void{
+    this.phone.push(this.newPhone())
+  }
+  removeEmail(i:number){
+    this.email.removeAt(i)
+  }
+  removePhone(i:number){
+    this.phone.removeAt(i)
+  }
+
+  setPersonalInfo(){
+    console.log(this.data)
+    if(typeof this.data.name !&#x3D; &#x27;undefined&#x27;){
+      this.personalinfoForm.controls.name.get(&quot;first&quot;).setValue(this.data.name.first)
+      this.personalinfoForm.controls.name.get(&quot;last&quot;).setValue(this.data.name.last)
+      this.personalinfoForm.controls.dob.setValue(this.data.dob)
+      this.personalinfoForm.controls.address.get(&quot;street&quot;).setValue(this.data.address.street)
+      this.personalinfoForm.controls.address.get(&quot;city&quot;).setValue(this.data.address.city)
+      this.personalinfoForm.controls.address.get(&quot;postal&quot;).setValue(this.data.address.postal)
+      this.personalinfoForm.controls.address.get(&quot;province&quot;).setValue(this.data.address.province)
+      this.personalinfoForm.controls.address.get(&quot;country&quot;).setValue(this.data.address.country)
+      this.personalinfoForm.controls.jobSearching.setValue(this.data.jobSearching)
+      this.username &#x3D; this.data.userName
+    }
+    
+    
+
+    let phonesControl &#x3D; &lt;FormArray&gt;this.personalinfoForm.controls.contact.get(&quot;phone&quot;);
+    if(this.data.contact !&#x3D; null){
+      this.data.contact.phone.forEach(x&#x3D;&gt;{
+        phonesControl.push(this.fb.group({
+          number: x.number,
+          related: x.related
+        }))
+      })
+    }
+     
+if(this.data.contact !&#x3D; null){
+  let emailsControl &#x3D; &lt;FormArray&gt;this.personalinfoForm.controls.contact.get(&quot;email&quot;);
+  this.data.contact.email.forEach(x&#x3D;&gt;{
+    emailsControl.push(this.fb.group({
+      address: x.address,
+      related: x.related
+    }))
+  })
+}
+    
+
+
+
+  }
+
+ 
+    
+  
+
+  savePersonalInfo(){
+
+    this.submitted &#x3D; true;
+    console.log(this.personalinfoForm);
+    //console.log(this.email.controls[0].get(&#x27;address&#x27;))
+
+    
+
+
+        this.userService.sendPersonalInfo(this.personalinfoForm.value).subscribe(
+          (success) &#x3D;&gt; {
+            console.log(success);
+            this.confirmDialog.openConfirmDialog(&quot;Personal Information Successfully Updated&quot;)
+          },
+          (err) &#x3D;&gt; {
+            console.log(err)
+            this.confirmDialog.openConfirmDialog(err.error.message)
+          }
+        );
+   }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;mat-card class&#x3D;&quot;my-2 container-fluid&quot;&gt;
+&lt;form [formGroup] &#x3D; &quot;personalinfoForm&quot; class&#x3D;&quot; p-2&quot; (ngSubmit)&#x3D;&quot;savePersonalInfo()&quot;&gt;
+        &lt;div class&#x3D;&quot;row&quot; formGroupName &#x3D; &quot;name&quot;&gt;
+            &lt;legend&gt;Your Personal Info&lt;/legend&gt;
+
+
+            &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+                &lt;mat-form-field appearance&#x3D;&quot;outline&quot;&gt;
+                    &lt;mat-label&gt;First Name&lt;/mat-label&gt;
+                    &lt;input formControlName&#x3D;&quot;first&quot; matInput placeholder&#x3D;&quot;John&quot;&gt;
+                &lt;/mat-form-field&gt;
+                &lt;span class&#x3D;&quot;text-danger&quot;&gt;
+                    &lt;span *ngIf&#x3D;&quot;(personalinfoFormControl.name.get(&#x27;first&#x27;).touched || submitted) &amp;&amp; personalinfoFormControl.name.get(&#x27;first&#x27;).errors?.required&quot;&gt;First name must not be empty&lt;/span&gt;
+                &lt;/span&gt;
+            &lt;/div&gt;
+            
+            &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+                &lt;mat-form-field appearance&#x3D;&quot;outline&quot;&gt;
+                    &lt;mat-label&gt;Last Name&lt;/mat-label&gt;
+                    &lt;input formControlName&#x3D;&quot;last&quot; matInput placeholder&#x3D;&quot;Doe&quot;&gt;
+                &lt;/mat-form-field&gt;
+                &lt;span class&#x3D;&quot;text-danger&quot;&gt;
+                    &lt;span *ngIf&#x3D;&quot;(personalinfoFormControl.name.get(&#x27;last&#x27;).touched || submitted) &amp;&amp; personalinfoFormControl.name.get(&#x27;last&#x27;).errors?.required&quot;&gt;Last name must not be empty&lt;/span&gt;
+                &lt;/span&gt;
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;row&quot;&gt;
+            &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+            &lt;mat-form-field  appearance&#x3D;&quot;outline&quot;&gt;
+                &lt;mat-label&gt;Date of Birth&lt;/mat-label&gt;
+                &lt;input matInput formControlName&#x3D;&quot;dob&quot; [matDatepicker]&#x3D;&quot;picker1&quot; placeholder&#x3D;&quot;DD-MM-YYYY&quot;&gt;
+                &lt;mat-datepicker-toggle matSuffix [for]&#x3D;&quot;picker1&quot;&gt;&lt;/mat-datepicker-toggle&gt;
+                &lt;mat-datepicker #picker1&gt;&lt;/mat-datepicker&gt;
+              &lt;/mat-form-field&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+&lt;div formGroupName &#x3D; &quot;contact&quot;&gt;
+        &lt;div formArrayName&#x3D; &quot;email&quot; *ngFor&#x3D;&quot;let num of email.controls; let i &#x3D; index&quot;&gt;
+            &lt;div [formGroupName] &#x3D; &quot;i&quot;&gt;
+                &lt;div class&#x3D;&quot;row&quot;&gt;
+
+                    &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+                       
+                            &lt;mat-form-field appearance&#x3D;&quot;outline&quot;&gt;
+                                &lt;mat-label&gt;Email&lt;/mat-label&gt;
+                                &lt;input formControlName&#x3D;&quot;address&quot; matInput placeholder&#x3D;&quot;email@example.com&quot;&gt;  
+                                 
+                                
+                            &lt;/mat-form-field&gt;
+                            
+                            &lt;span class&#x3D;&quot;text-danger&quot;&gt;
+                                 &lt;span *ngIf&#x3D;&quot;email.controls[i].get(&#x27;address&#x27;).touched &amp;&amp; email.controls[i].get(&#x27;address&#x27;).errors?.email&quot;&gt;E-mail is not valid&lt;/span&gt; 
+                                &lt;span *ngIf&#x3D;&quot;(email.controls[i].get(&#x27;address&#x27;).touched || submitted) &amp;&amp; email.controls[i].get(&#x27;address&#x27;).errors?.required&quot;&gt;Email can not be empty&lt;/span&gt;
+                            &lt;/span&gt; 
+                        
+                    &lt;/div&gt;
+
+                    &lt;div class&#x3D;&quot;col-md-5&quot;&gt;
+                            &lt;!-- &lt;div class&#x3D;&quot;form-group&quot;&gt;
+
+                                    &lt;select formControlName&#x3D;&quot;related&quot; class&#x3D;&quot;form-control&quot; (change)&#x3D;&quot;changeWebsite($event)&quot;&gt;
+                                        &lt;option disabled&gt;Associated with&lt;/option&gt;
+                                        &lt;option *ngFor&#x3D;&quot;let item of relatedList&quot;&gt;{{item}}&lt;/option&gt;
+                                    &lt;/select&gt;
+                                     &lt;div *ngIf&#x3D;&quot;personalinfoFormControl.website.touched &amp;&amp; f.website.invalid&quot; class&#x3D;&quot;alert alert-danger&quot;&gt;
+                                        &lt;div *ngIf&#x3D;&quot;f.website.errors.required&quot;&gt;Name is required.&lt;/div&gt;
+                                    &lt;/div&gt; 
+
+                            &lt;/div&gt;  --&gt;
+
+                            &lt;mat-form-field appearance&#x3D;&quot;outline&quot;&gt;
+                                &lt;mat-label&gt;Associated with&lt;/mat-label&gt;
+                                &lt;mat-select formControlName&#x3D;&quot;related&quot; &gt;
+                                  &lt;mat-option *ngFor&#x3D;&quot;let item of relatedList&quot; [value]&#x3D;&quot;item&quot;&gt;{{item}}&lt;/mat-option&gt;
+                                &lt;/mat-select&gt;
+                            &lt;/mat-form-field&gt;
+                            &lt;span class&#x3D;&quot;text-danger&quot;&gt;
+                                &lt;span *ngIf&#x3D;&quot;(email.controls[i].get(&#x27;related&#x27;).touched || submitted) &amp;&amp; email.controls[i].get(&#x27;related&#x27;).errors?.required&quot;&gt;Associated with can not be empty&lt;/span&gt;
+                            &lt;/span&gt;
+
+
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;col-md-1 pt-2&quot;&gt;
+                        &lt;button mat-raised-button color&#x3D;&quot;warn&quot; (click)&#x3D;&quot;removeEmail(i)&quot;&gt;X&lt;/button&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt; 
+        &lt;/div&gt;        
+        &lt;div class&#x3D;&quot;d-flex flex-row-reverse&quot;&gt;
+                &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-outline-primary&quot; (click)&#x3D;&quot;addEmail()&quot;&gt;+ Add Email&lt;/button&gt;
+        &lt;/div&gt;&lt;br&gt;
+
+        &lt;div formArrayName&#x3D; &quot;phone&quot; *ngFor&#x3D;&quot;let num of phone.controls; let j &#x3D; index&quot;&gt;
+            &lt;div [formGroupName] &#x3D; &quot;j&quot;&gt;
+                &lt;div class&#x3D;&quot;row&quot;&gt;
+                    &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+                        &lt;mat-form-field appearance&#x3D;&quot;outline&quot;&gt;
+                            &lt;mat-label&gt;Phone&lt;/mat-label&gt;
+                            &lt;input formControlName&#x3D;&quot;number&quot; matInput placeholder&#x3D;&quot;905-123-4567&quot;&gt;
+                        &lt;/mat-form-field&gt;
+                        &lt;span class&#x3D;&quot;text-danger&quot;&gt;
+                           &lt;span *ngIf&#x3D;&quot;(phone.controls[j].get(&#x27;number&#x27;).touched || submitted) &amp;&amp; phone.controls[j].get(&#x27;number&#x27;).errors?.required&quot;&gt;Phone can not be empty&lt;/span&gt;
+                       &lt;/span&gt; 
+                    &lt;/div&gt;
+
+                    &lt;div class&#x3D;&quot;col-md-5&quot;&gt;
+                        &lt;mat-form-field appearance&#x3D;&quot;outline&quot;&gt;
+                            &lt;mat-label&gt;Associated with&lt;/mat-label&gt;
+                            &lt;mat-select formControlName&#x3D;&quot;related&quot; &gt;
+                              &lt;mat-option *ngFor&#x3D;&quot;let item of relatedList&quot; [value]&#x3D;&quot;item&quot;&gt;{{item}}&lt;/mat-option&gt;
+                            &lt;/mat-select&gt;
+                        &lt;/mat-form-field&gt;
+                        &lt;span class&#x3D;&quot;text-danger&quot;&gt;
+                            &lt;span *ngIf&#x3D;&quot;(phone.controls[j].get(&#x27;related&#x27;).touched || submitted) &amp;&amp; phone.controls[j].get(&#x27;related&#x27;).errors?.required&quot;&gt;Associated with can not be empty&lt;/span&gt;
+                        &lt;/span&gt;
+
+                    &lt;/div&gt;
+
+                    &lt;!-- &lt;div class&#x3D;&quot;col-md-3&quot;&gt;
+                        &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                            &lt;mat-form-field appearance&#x3D;&quot;outline&quot;&gt;
+                                &lt;mat-label&gt;Primary&lt;/mat-label&gt;
+                                &lt;input formControlName&#x3D;&quot;primary&quot; matInput &gt;
+                            &lt;/mat-form-field&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt; --&gt;
+                    &lt;div class&#x3D;&quot;col-md-1 pt-2&quot;&gt;
+                        &lt;button mat-raised-button color&#x3D;&quot;warn&quot; (click)&#x3D;&quot;removePhone(j)&quot;&gt;X&lt;/button&gt;
+                    &lt;/div&gt;
+
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+        &lt;div class&#x3D;&quot;d-flex flex-row-reverse&quot;&gt;
+                &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-outline-primary&quot; (click)&#x3D;&quot;addPhone()&quot; &gt;+ Add Phone&lt;/button&gt;
+           
+        &lt;/div&gt;
+        &lt;label &gt;Address&lt;/label&gt;
+        &lt;div formGroupName&#x3D;&quot;address&quot;&gt;
+            &lt;div class&#x3D;&quot;row&quot;&gt;
+                &lt;div class&#x3D;&quot;col-md-4&quot;&gt;
+                    &lt;mat-form-field appearance&#x3D;&quot;outline&quot;&gt;
+                        &lt;mat-label&gt;Street&lt;/mat-label&gt;
+                        &lt;input formControlName&#x3D;&quot;street&quot; placeholder&#x3D;&quot;Road name / unit number&quot; matInput &gt;
+                    &lt;/mat-form-field&gt;
+                &lt;/div&gt;
+
+                &lt;div class&#x3D;&quot;col-md-4&quot;&gt;
+                    &lt;mat-form-field appearance&#x3D;&quot;outline&quot;&gt;
+                        &lt;mat-label&gt;City&lt;/mat-label&gt;
+                        &lt;input formControlName&#x3D;&quot;city&quot; matInput &gt;
+                    &lt;/mat-form-field&gt;
+                &lt;/div&gt;
+
+                &lt;div class&#x3D;&quot;col-md-4&quot;&gt;
+                    &lt;mat-form-field appearance&#x3D;&quot;outline&quot;&gt;
+                        &lt;mat-label&gt;Postal/Zip code&lt;/mat-label&gt;
+                        &lt;input formControlName&#x3D;&quot;postal&quot; matInput &gt;
+                    &lt;/mat-form-field&gt;
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+
+            &lt;div class&#x3D;&quot;row&quot;&gt;
+                &lt;div class&#x3D;&quot;col-md-4&quot;&gt;
+                    &lt;mat-form-field appearance&#x3D;&quot;outline&quot;&gt;
+                        &lt;mat-label&gt;Province/State&lt;/mat-label&gt;
+                        &lt;input formControlName&#x3D;&quot;province&quot; matInput &gt;
+                    &lt;/mat-form-field&gt;
+                &lt;/div&gt;
+
+                &lt;div class&#x3D;&quot;col-md-4&quot;&gt;
+                    &lt;mat-form-field appearance&#x3D;&quot;outline&quot;&gt;
+                        &lt;mat-label&gt;Country&lt;/mat-label&gt;
+                        &lt;input formControlName&#x3D;&quot;country&quot; placeholder&#x3D;&quot;Bangladesh&quot; matInput &gt;
+                    &lt;/mat-form-field&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt; 
+        
+            &lt;!-- &lt;div class&#x3D;&quot;d-flex flex-row-reverse&quot;&gt;      
+                    &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-outline-primary ml-2&quot;&gt;Change Password&lt;/button&gt;
+            &lt;/div&gt; --&gt;
+        
+            
+                &lt;div class&#x3D;&quot;d-flex justify-content-center&quot;&gt;
+                    &lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn btn-primary ml-4&quot;&gt;Save Personal Info&lt;/button&gt;
+                &lt;/div&gt;
+
+        
+&lt;/form&gt;
+    
+
+&lt;/mat-card&gt;
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./user-personal-info.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">mat-form-field{
+    width: 100%;;
+}
+button {
+    min-width: 1%;
+    
+
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><mat-card class="my-2 container-fluid"><form [formGroup] = "personalinfoForm" class=" p-2" (ngSubmit)="savePersonalInfo()">        <div class="row" formGroupName = "name">            <legend>Your Personal Info</legend>            <div class="col-md-6">                <mat-form-field appearance="outline">                    <mat-label>First Name</mat-label>                    <input formControlName="first" matInput placeholder="John">                </mat-form-field>                <span class="text-danger">                    <span *ngIf="(personalinfoFormControl.name.get(\'first\').touched || submitted) && personalinfoFormControl.name.get(\'first\').errors?.required">First name must not be empty</span>                </span>            </div>                        <div class="col-md-6">                <mat-form-field appearance="outline">                    <mat-label>Last Name</mat-label>                    <input formControlName="last" matInput placeholder="Doe">                </mat-form-field>                <span class="text-danger">                    <span *ngIf="(personalinfoFormControl.name.get(\'last\').touched || submitted) && personalinfoFormControl.name.get(\'last\').errors?.required">Last name must not be empty</span>                </span>            </div>        </div>        <div class="row">            <div class="col-md-6">            <mat-form-field  appearance="outline">                <mat-label>Date of Birth</mat-label>                <input matInput formControlName="dob" [matDatepicker]="picker1" placeholder="DD-MM-YYYY">                <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>                <mat-datepicker #picker1></mat-datepicker>              </mat-form-field>            </div>        </div><div formGroupName = "contact">        <div formArrayName= "email" *ngFor="let num of email.controls; let i = index">            <div [formGroupName] = "i">                <div class="row">                    <div class="col-md-6">                                                   <mat-form-field appearance="outline">                                <mat-label>Email</mat-label>                                <input formControlName="address" matInput placeholder="email@example.com">                                                                                               </mat-form-field>                                                        <span class="text-danger">                                 <span *ngIf="email.controls[i].get(\'address\').touched && email.controls[i].get(\'address\').errors?.email">E-mail is not valid</span>                                 <span *ngIf="(email.controls[i].get(\'address\').touched || submitted) && email.controls[i].get(\'address\').errors?.required">Email can not be empty</span>                            </span>                                             </div>                    <div class="col-md-5">                            <!-- <div class="form-group">                                    <select formControlName="related" class="form-control" (change)="changeWebsite($event)">                                        <option disabled>Associated with</option>                                        <option *ngFor="let item of relatedList">{{item}}</option>                                    </select>                                     <div *ngIf="personalinfoFormControl.website.touched && f.website.invalid" class="alert alert-danger">                                        <div *ngIf="f.website.errors.required">Name is required.</div>                                    </div>                             </div>  -->                            <mat-form-field appearance="outline">                                <mat-label>Associated with</mat-label>                                <mat-select formControlName="related" >                                  <mat-option *ngFor="let item of relatedList" [value]="item">{{item}}</mat-option>                                </mat-select>                            </mat-form-field>                            <span class="text-danger">                                <span *ngIf="(email.controls[i].get(\'related\').touched || submitted) && email.controls[i].get(\'related\').errors?.required">Associated with can not be empty</span>                            </span>                    </div>                    <div class="col-md-1 pt-2">                        <button mat-raised-button color="warn" (click)="removeEmail(i)">X</button>                    </div>                </div>            </div>         </div>                <div class="d-flex flex-row-reverse">                <button type="button" class="btn btn-outline-primary" (click)="addEmail()">+ Add Email</button>        </div><br>        <div formArrayName= "phone" *ngFor="let num of phone.controls; let j = index">            <div [formGroupName] = "j">                <div class="row">                    <div class="col-md-6">                        <mat-form-field appearance="outline">                            <mat-label>Phone</mat-label>                            <input formControlName="number" matInput placeholder="905-123-4567">                        </mat-form-field>                        <span class="text-danger">                           <span *ngIf="(phone.controls[j].get(\'number\').touched || submitted) && phone.controls[j].get(\'number\').errors?.required">Phone can not be empty</span>                       </span>                     </div>                    <div class="col-md-5">                        <mat-form-field appearance="outline">                            <mat-label>Associated with</mat-label>                            <mat-select formControlName="related" >                              <mat-option *ngFor="let item of relatedList" [value]="item">{{item}}</mat-option>                            </mat-select>                        </mat-form-field>                        <span class="text-danger">                            <span *ngIf="(phone.controls[j].get(\'related\').touched || submitted) && phone.controls[j].get(\'related\').errors?.required">Associated with can not be empty</span>                        </span>                    </div>                    <!-- <div class="col-md-3">                        <div class="form-group">                            <mat-form-field appearance="outline">                                <mat-label>Primary</mat-label>                                <input formControlName="primary" matInput >                            </mat-form-field>                        </div>                    </div> -->                    <div class="col-md-1 pt-2">                        <button mat-raised-button color="warn" (click)="removePhone(j)">X</button>                    </div>                </div>            </div>        </div>    </div>        <div class="d-flex flex-row-reverse">                <button type="button" class="btn btn-outline-primary" (click)="addPhone()" >+ Add Phone</button>                   </div>        <label >Address</label>        <div formGroupName="address">            <div class="row">                <div class="col-md-4">                    <mat-form-field appearance="outline">                        <mat-label>Street</mat-label>                        <input formControlName="street" placeholder="Road name / unit number" matInput >                    </mat-form-field>                </div>                <div class="col-md-4">                    <mat-form-field appearance="outline">                        <mat-label>City</mat-label>                        <input formControlName="city" matInput >                    </mat-form-field>                </div>                <div class="col-md-4">                    <mat-form-field appearance="outline">                        <mat-label>Postal/Zip code</mat-label>                        <input formControlName="postal" matInput >                    </mat-form-field>                </div>            </div>            <div class="row">                <div class="col-md-4">                    <mat-form-field appearance="outline">                        <mat-label>Province/State</mat-label>                        <input formControlName="province" matInput >                    </mat-form-field>                </div>                <div class="col-md-4">                    <mat-form-field appearance="outline">                        <mat-label>Country</mat-label>                        <input formControlName="country" placeholder="Bangladesh" matInput >                    </mat-form-field>                </div>            </div>        </div>                     <!-- <div class="d-flex flex-row-reverse">                          <button type="button" class="btn btn-outline-primary ml-2">Change Password</button>            </div> -->                                    <div class="d-flex justify-content-center">                    <button type="submit" class="btn btn-primary ml-4">Save Personal Info</button>                </div>        </form>    </mat-card></div>'
+    var COMPONENTS = [{'name': 'AboutCandidateComponent', 'selector': 'app-about-candidate'},{'name': 'AboutJobComponent', 'selector': 'app-about-job'},{'name': 'AddExperienceComponent', 'selector': 'app-add-experience'},{'name': 'AllJobsComponent', 'selector': 'app-all-jobs'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CompanyListComponent', 'selector': 'app-company-list'},{'name': 'CompanyMenuComponent', 'selector': 'app-company-menu'},{'name': 'ConfirmDialogComponent', 'selector': 'app-confirm-dialog'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'CreateCompanyComponent', 'selector': 'app-create-company'},{'name': 'CreateNewEmailComponent', 'selector': 'app-create-new-email'},{'name': 'CreateNewPhoneComponent', 'selector': 'app-create-new-phone'},{'name': 'CreatePreferredJobLocationComponent', 'selector': 'app-create-preferred-job-location'},{'name': 'CustomerListComponent', 'selector': 'app-customer-list'},{'name': 'EditExperienceComponent', 'selector': 'app-edit-experience'},{'name': 'EmployeeAccountComponent', 'selector': 'app-employee-account'},{'name': 'EmployerAccountComponent', 'selector': 'app-employer-account'},{'name': 'EmployerQuestionsComponent', 'selector': 'app-employer-questions'},{'name': 'ErrordialogComponent', 'selector': 'app-errordialog'},{'name': 'ExistingReferralComponent', 'selector': 'app-existing-referral'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'ForgetpasswordComponent', 'selector': 'app-forgetpassword'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HomePageComponent', 'selector': 'app-home-page'},{'name': 'InterviewScheduleComponent', 'selector': 'app-interview-schedule'},{'name': 'IntroVideoComponent', 'selector': 'app-intro-video'},{'name': 'JobsInterestedInComponent', 'selector': 'app-jobs-interested-in'},{'name': 'KeyPointsComponent', 'selector': 'app-key-points'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'NavbarComponent', 'selector': 'app-navbar'},{'name': 'PendingReferralRequestComponent', 'selector': 'app-pending-referral-request'},{'name': 'PostJobComponent', 'selector': 'app-post-job'},{'name': 'PreferredJobLocationComponent', 'selector': 'app-preferred-job-location'},{'name': 'RefereeAccountComponent', 'selector': 'app-referee-account'},{'name': 'RefereeScoreComponent', 'selector': 'app-referee-score'},{'name': 'ReferralBonusComponent', 'selector': 'app-referral-bonus'},{'name': 'ReferralReviewPageComponent', 'selector': 'app-referral-review-page'},{'name': 'ReferralReviewRequestComponent', 'selector': 'app-referral-review-request'},{'name': 'ResetpasswordComponent', 'selector': 'app-resetpassword'},{'name': 'SavedJobsComponent', 'selector': 'app-saved-jobs'},{'name': 'SearchAgentComponent', 'selector': 'app-search-agent'},{'name': 'SignupComponent', 'selector': 'app-signup'},{'name': 'SignupconfirmationComponent', 'selector': 'app-signupconfirmation'},{'name': 'SignupLandingComponent', 'selector': 'app-signup-landing'},{'name': 'SystemVideoComponent', 'selector': 'app-system-video'},{'name': 'TestAndOtherDocumentsComponent', 'selector': 'app-test-and-other-documents'},{'name': 'UserDashboardComponent', 'selector': 'app-user-dashboard'},{'name': 'UserEducationComponent', 'selector': 'app-user-education'},{'name': 'UserMenuComponent', 'selector': 'app-user-menu'},{'name': 'UserNamePhotoComponent', 'selector': 'app-user-name-photo'},{'name': 'UserPersonalInfoComponent', 'selector': 'app-user-personal-info'},{'name': 'UserProfileComponent', 'selector': 'app-user-profile'},{'name': 'UserSkillComponent', 'selector': 'app-user-skill'},{'name': 'UserWorkExperienceComponent', 'selector': 'app-user-work-experience'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'UserPersonalInfoComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'UserPersonalInfoComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       
+       <script type="module" src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

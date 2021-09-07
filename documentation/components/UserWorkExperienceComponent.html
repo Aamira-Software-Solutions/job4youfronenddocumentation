@@ -1,0 +1,1847 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>frontend documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">frontend documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  UserWorkExperienceComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/components/user-profile/user-work-experience/user-work-experience.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-user-work-experience</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./user-work-experience.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./user-work-experience.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#data" >data</a>
+                            </li>
+                            <li>
+                                <a href="#disableEnd" >disableEnd</a>
+                            </li>
+                            <li>
+                                <a href="#items" >items</a>
+                            </li>
+                            <li>
+                                <a href="#lock" >lock</a>
+                            </li>
+                            <li>
+                                <a href="#oldArrayLen" >oldArrayLen</a>
+                            </li>
+                            <li>
+                                <a href="#selected" >selected</a>
+                            </li>
+                            <li>
+                                <a href="#usedSkill" >usedSkill</a>
+                            </li>
+                            <li>
+                                <a href="#workExperienceForm" >workExperienceForm</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#addExperiences" >addExperiences</a>
+                            </li>
+                            <li>
+                                <a href="#addReference" >addReference</a>
+                            </li>
+                            <li>
+                                <a href="#addSkill" >addSkill</a>
+                            </li>
+                            <li>
+                                <a href="#disableEndDate" >disableEndDate</a>
+                            </li>
+                            <li>
+                                <a href="#lockSkill" >lockSkill</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#removeExperience" >removeExperience</a>
+                            </li>
+                            <li>
+                                <a href="#removeReference" >removeReference</a>
+                            </li>
+                            <li>
+                                <a href="#saveExperienceInfo" >saveExperienceInfo</a>
+                            </li>
+                            <li>
+                                <a href="#setExperiences" >setExperiences</a>
+                            </li>
+                            <li>
+                                <a href="#setReferences" >setReferences</a>
+                            </li>
+                            <li>
+                                <a href="#setSkillUsed" >setSkillUsed</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#experienceInfos" >experienceInfos</a>
+                                </li>
+                                <li>
+                                    <a href="#newExperience" >newExperience</a>
+                                </li>
+                                <li>
+                                    <a href="#skillUsed" >skillUsed</a>
+                                </li>
+                                <li>
+                                    <a href="#references" >references</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(fb: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, userService: <a href="../injectables/UserProfileService.html" target="_self">UserProfileService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:31</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>fb</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>userService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UserProfileService.html" target="_self" >UserProfileService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addExperiences"></a>
+                    <span class="name">
+                        <span ><b>addExperiences</b></span>
+                        <a href="#addExperiences"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addExperiences()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="109"
+                            class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:109</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addReference"></a>
+                    <span class="name">
+                        <span ><b>addReference</b></span>
+                        <a href="#addReference"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addReference(experience)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="113"
+                            class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:113</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>experience</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addSkill"></a>
+                    <span class="name">
+                        <span ><b>addSkill</b></span>
+                        <a href="#addSkill"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addSkill(experience)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="117"
+                            class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:117</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>experience</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="disableEndDate"></a>
+                    <span class="name">
+                        <span ><b>disableEndDate</b></span>
+                        <a href="#disableEndDate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>disableEndDate(experience)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="57"
+                            class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:57</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>experience</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="lockSkill"></a>
+                    <span class="name">
+                        <span ><b>lockSkill</b></span>
+                        <a href="#lockSkill"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>lockSkill(experience)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="185"
+                            class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:185</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>experience</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="54"
+                            class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:54</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removeExperience"></a>
+                    <span class="name">
+                        <span ><b>removeExperience</b></span>
+                        <a href="#removeExperience"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>removeExperience(i: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="122"
+                            class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:122</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>i</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removeReference"></a>
+                    <span class="name">
+                        <span ><b>removeReference</b></span>
+                        <a href="#removeReference"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>removeReference(experience, i: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="126"
+                            class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:126</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>experience</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>i</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="saveExperienceInfo"></a>
+                    <span class="name">
+                        <span ><b>saveExperienceInfo</b></span>
+                        <a href="#saveExperienceInfo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>saveExperienceInfo()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="201"
+                            class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:201</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setExperiences"></a>
+                    <span class="name">
+                        <span ><b>setExperiences</b></span>
+                        <a href="#setExperiences"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setExperiences()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="130"
+                            class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:130</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setReferences"></a>
+                    <span class="name">
+                        <span ><b>setReferences</b></span>
+                        <a href="#setReferences"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setReferences(x)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="152"
+                            class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:152</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>x</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setSkillUsed"></a>
+                    <span class="name">
+                        <span ><b>setSkillUsed</b></span>
+                        <a href="#setSkillUsed"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setSkillUsed(x)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="165"
+                            class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:165</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>x</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="data"></a>
+                    <span class="name">
+                        <span ><b>data</b></span>
+                        <a href="#data"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:27</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="disableEnd"></a>
+                    <span class="name">
+                        <span ><b>disableEnd</b></span>
+                        <a href="#disableEnd"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:56</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="items"></a>
+                    <span class="name">
+                        <span ><b>items</b></span>
+                        <a href="#items"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[
+      {name: &#x27;Python&#x27;},
+      {name: &#x27;Node Js&#x27;},
+      {name: &#x27;Java&#x27;},
+      {name: &#x27;PHP&#x27;},
+      {name: &#x27;Django&#x27;}, 
+      {name: &#x27;Angular&#x27;},
+      {name: &#x27;Vue&#x27;},
+      {name: &#x27;ReactJs&#x27;},
+    ]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:14</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="lock"></a>
+                    <span class="name">
+                        <span ><b>lock</b></span>
+                        <a href="#lock"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&quot;Lock skill&quot;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:29</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="oldArrayLen"></a>
+                    <span class="name">
+                        <span ><b>oldArrayLen</b></span>
+                        <a href="#oldArrayLen"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:31</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selected"></a>
+                    <span class="name">
+                        <span ><b>selected</b></span>
+                        <a href="#selected"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:24</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="usedSkill"></a>
+                    <span class="name">
+                        <span ><b>usedSkill</b></span>
+                        <a href="#usedSkill"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:30</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="workExperienceForm"></a>
+                    <span class="name">
+                        <span ><b>workExperienceForm</b></span>
+                        <a href="#workExperienceForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="experienceInfos"></a>
+                        <span class="name"><b>experienceInfos</b><a href="#experienceInfos"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>experienceInfos()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="67" class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:67</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="newExperience"></a>
+                        <span class="name"><b>newExperience</b><a href="#newExperience"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>newExperience()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="74" class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:74</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="skillUsed"></a>
+                        <span class="name"><b>skillUsed</b><a href="#skillUsed"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>skillUsed()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="91" class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:91</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="references"></a>
+                        <span class="name"><b>references</b><a href="#references"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>references()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="100" class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:100</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+</section>
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { FormGroup, FormBuilder, FormArray, FormControl, Validators } from &#x27;@angular/forms&#x27;;
+
+import { UserProfileService } from &quot;src/app/services/user-profile.service&quot;
+
+@Component({
+  selector: &#x27;app-user-work-experience&#x27;,
+  templateUrl: &#x27;./user-work-experience.component.html&#x27;,
+  styleUrls: [&#x27;./user-work-experience.component.css&#x27;]
+})
+export class UserWorkExperienceComponent implements OnInit {
+
+    ////////////////////////////demo data
+    items &#x3D; [
+      {name: &#x27;Python&#x27;},
+      {name: &#x27;Node Js&#x27;},
+      {name: &#x27;Java&#x27;},
+      {name: &#x27;PHP&#x27;},
+      {name: &#x27;Django&#x27;}, 
+      {name: &#x27;Angular&#x27;},
+      {name: &#x27;Vue&#x27;},
+      {name: &#x27;ReactJs&#x27;},
+    ];
+    selected &#x3D; [];
+  ///////////////////////////
+
+  data:any;
+  workExperienceForm: FormGroup;
+  lock&#x3D;&quot;Lock skill&quot;
+  usedSkill:any;
+  oldArrayLen:any;
+  
+
+  constructor(private fb: FormBuilder, private userService: UserProfileService) { 
+
+    this.userService.getExperiences().subscribe(
+      (success) &#x3D;&gt; {
+        this.data &#x3D; success.data.experiences
+        
+        this.oldArrayLen &#x3D; this.data.length;
+        this.setExperiences()
+      },
+      (err) &#x3D;&gt; {
+        console.log(err)
+      }
+    )
+    this.workExperienceForm &#x3D; this.fb.group({
+      experienceInfos: this.fb.array([
+        //this.newExperience
+      ])
+    })
+  }
+
+  ngOnInit(): void {
+  }
+  disableEnd &#x3D; true;
+  disableEndDate(experience):void{
+
+    
+    if(experience.get(&quot;current&quot;).value){
+      experience.get(&quot;end&quot;).disable();
+    }else{
+      experience.get(&quot;end&quot;).enable();
+    }
+  }
+  
+  get experienceInfos(): FormArray{
+    return this.workExperienceForm.get(&quot;experienceInfos&quot;) as FormArray
+  }
+  
+
+
+// Experience array of sevaral group and one array
+  get newExperience(): FormGroup{
+    return this.fb.group({
+      employerName: &#x27;&#x27;,
+      jobTitle: &#x27;&#x27;,
+      jobDesc: &#x27;&#x27;,
+      skillUsed: this.fb.array([
+        this.skillUsed
+     ]),
+      current: &#x27;&#x27;,
+       references: this.fb.array([
+          this.references
+       ]),
+      start: &#x27;&#x27;,
+      end: &#x27;&#x27;,
+      junk:&#x27;&#x27;
+    })
+  }
+get skillUsed(): FormGroup{
+  return this.fb.group({
+    name:&#x27;&#x27;
+  })
+}
+
+ 
+
+// Reference array with groups
+get references(): FormGroup{
+  return this.fb.group({
+    name: &#x27;&#x27;,
+    jobTitle: &#x27;&#x27;,
+    email: &#x27;&#x27;,
+    relationship:&#x27;&#x27;
+  })
+}
+
+addExperiences(): void{
+  (this.workExperienceForm.get(&quot;experienceInfos&quot;) as FormArray).push(this.newExperience);
+}
+
+addReference(experience): void{
+  experience.get(&#x27;references&#x27;).push(this.references)
+}
+
+addSkill(experience):void{
+  experience.get(&#x27;skillUsed&#x27;).push(this.skillUsed)
+}
+
+
+  removeExperience(i:number){
+    (this.workExperienceForm.get(&quot;experienceInfos&quot;) as FormArray).removeAt(i);
+  }
+
+  removeReference(experience,i:number){
+    experience.get(&#x27;references&#x27;).removeAt(i);
+  }
+
+  setExperiences(){
+    let control &#x3D; &lt;FormArray&gt;this.workExperienceForm.controls.experienceInfos;
+    this.data.forEach(x&#x3D;&gt;{
+      control.push(this.fb.group({
+        employerName: x.employerName,
+      jobTitle: x.jobTitle,
+      jobDesc: x.jobDesc,
+      current: x.current,
+      skillUsed: this.setSkillUsed(x),
+       references: this.setReferences(x),
+      start: x.start,
+      end: x.end
+      }))
+    })
+///need modification
+    // this.data.skillUsed.forEach(x&#x3D;&gt;{
+    //   this.selected.push({
+    //     name: x
+    //   })
+    // })
+  } 
+  
+  setReferences(x){
+    let arr &#x3D; new FormArray([])
+    x.references.forEach(y &#x3D;&gt;{
+      arr.push(this.fb.group({
+        name: y.name,
+    jobTitle: y.jobTitle,
+    email: y.email,
+    relationship: y.relationship
+      }))
+    })
+    return arr;
+  }
+
+  setSkillUsed(x){
+    let arr &#x3D; new FormArray([])
+    x.skillUsed.forEach(y&#x3D;&gt;{
+      arr.push(this.fb.group({
+        name: y
+      }))
+    })
+
+    return arr;
+  }
+  /*
+  onAdd($event) {
+    this.selected.push( $event );
+  }
+  onRemove($event) {
+    console.log($event.value)
+    
+    this.selected &#x3D; this.selected.filter(function(value, index, arr){ return value !&#x3D; $event.value;});
+  }*/
+
+  lockSkill(experience){
+    let arr &#x3D; experience.get(&quot;skillUsed&quot;)
+    this.selected.forEach(y &#x3D;&gt;{
+      arr.push(this.fb.group(
+        {name:y.name}
+      ))
+    })
+
+    this.lock &#x3D; &quot;Locked&quot;;
+    experience.get(&quot;junk&quot;).disable();
+    
+  }
+
+
+
+
+  saveExperienceInfo(){
+
+
+    for(var i &#x3D;0; i&lt; this.workExperienceForm.value.experienceInfos.length; i++){
+        var popedData &#x3D; new Array()
+        const len &#x3D;  this.workExperienceForm.value.experienceInfos[i].skillUsed.length
+        for(var j&#x3D; 0; j&lt; len; j++){
+            var data &#x3D; this.workExperienceForm.value.experienceInfos[i].skillUsed.pop()
+            popedData.push(data.name)
+            
+            if(this.workExperienceForm.value.experienceInfos[i].current &#x3D;&#x3D;&#x3D; &#x27;&#x27;){
+              this.workExperienceForm.value.experienceInfos[i].current &#x3D; false
+            }
+             
+        }
+        for(var j&#x3D; 0; j&lt; len; j++){
+          var data &#x3D; popedData.pop()
+          this.workExperienceForm.value.experienceInfos[i].skillUsed.push(data)
+          }
+    }
+      console.log(&quot;clicked&quot;)
+    
+         this.userService.sendExperience(this.workExperienceForm.value.experienceInfos).subscribe(
+           (success) &#x3D;&gt; {
+             console.log(success);
+           },
+           (err) &#x3D;&gt; {
+             console.log(err)
+           }
+         )
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;mat-card class&#x3D;&quot;my-2 container-fluid&quot;&gt;
+&lt;form [formGroup]&#x3D;&quot;workExperienceForm&quot; (ngSubmit)&#x3D;&quot;saveExperienceInfo()&quot;&gt;
+    &lt;legend&gt;Your Work Experience&lt;/legend&gt;
+    &lt;div formArrayName&#x3D;&quot;experienceInfos&quot; *ngFor &#x3D; &quot;let experience of experienceInfos.controls; let i &#x3D; index&quot;&gt;
+        &lt;div [formGroupName] &#x3D; &quot;i&quot;&gt;
+        &lt;div class&#x3D;&quot;row&quot;&gt;
+            &lt;div class&#x3D;&quot;col-md-4&quot;&gt;
+                
+
+                &lt;mat-form-field appearance&#x3D;&quot;outline&quot;&gt;
+                    &lt;mat-label&gt;Company Name&lt;/mat-label&gt;
+                    &lt;input formControlName&#x3D;&quot;employerName&quot; matInput placeholder&#x3D;&quot;Company Name&quot;&gt;
+                &lt;/mat-form-field&gt;
+            &lt;/div&gt; 
+            
+            &lt;div class&#x3D;&quot;col-md-4&quot;&gt;
+               
+
+                &lt;mat-form-field appearance&#x3D;&quot;outline&quot;&gt;
+                    &lt;mat-label&gt;Start Date&lt;/mat-label&gt;
+                    &lt;input matInput formControlName&#x3D;&quot;start&quot; [matDatepicker]&#x3D;&quot;picker1&quot; placeholder&#x3D;&quot;DD-MM-YYYY&quot;&gt;
+                    &lt;mat-datepicker-toggle matSuffix [for]&#x3D;&quot;picker1&quot;&gt;&lt;/mat-datepicker-toggle&gt;
+                    &lt;mat-datepicker #picker1&gt;&lt;/mat-datepicker&gt;
+                &lt;/mat-form-field&gt;
+            &lt;/div&gt;
+
+            &lt;div class&#x3D;&quot;col-md-4&quot;&gt;
+                
+
+                &lt;mat-form-field appearance&#x3D;&quot;outline&quot;&gt;
+                    &lt;mat-label&gt;End Date&lt;/mat-label&gt;
+                    &lt;input matInput formControlName&#x3D;&quot;end&quot; [matDatepicker]&#x3D;&quot;picker2&quot; placeholder&#x3D;&quot;DD-MM-YYYY&quot; &gt;
+                    &lt;mat-datepicker-toggle matSuffix [for]&#x3D;&quot;picker2&quot;&gt;&lt;/mat-datepicker-toggle&gt;
+                    &lt;mat-datepicker #picker2&gt;&lt;/mat-datepicker&gt;
+                &lt;/mat-form-field&gt;
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;row&quot;&gt;
+
+            &lt;div class&#x3D;&quot;col-md-4&quot;&gt;
+                
+
+                &lt;mat-form-field appearance&#x3D;&quot;outline&quot;&gt;
+                    &lt;mat-label&gt;Job Title&lt;/mat-label&gt;
+                    &lt;input formControlName&#x3D;&quot;jobTitle&quot; matInput placeholder&#x3D;&quot;Job Title&quot;&gt;
+                &lt;/mat-form-field&gt;
+
+                &lt;div class&#x3D;&quot;form-group d-inline-flex p-3&quot;&gt; 
+                    
+                    
+                    &lt;mat-checkbox formControlName&#x3D;&quot;current&quot;   [pristine]&#x3D;&quot;disableEndDate(experience)&quot; &gt;Currently working here&lt;/mat-checkbox&gt;
+                    
+                    
+                   
+                   
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            
+            
+        &lt;/div&gt;
+        &lt;hr&gt;
+        &lt;!-- &lt;div class&#x3D;&quot;row ml-2&quot;&gt;
+             &lt;div *ngFor &#x3D; &quot;let skill of selected; let i &#x3D; index&quot; class&#x3D;&quot;mat-elevation-z1 mx-2 p-2&quot; style&#x3D;&quot;background-color: blue; color: white; border-radius: 5px;&quot;&gt;
+                skill.name
+            &lt;/div&gt; 
+        &lt;/div&gt; --&gt;
+        &lt;div formArrayName&#x3D;&quot;skillUsed&quot; *ngFor &#x3D; &quot;let skill of experience.get(&#x27;skillUsed&#x27;).controls; let k &#x3D; index&quot;&gt;
+            &lt;!-- reference array --&gt;
+            &lt;div [formGroupName] &#x3D; &quot;k&quot;&gt;
+                &lt;div class&#x3D;&quot;row&quot;&gt;
+                    &lt;div class&#x3D;&quot;col-md-4&quot; &gt;
+                                    &lt;mat-form-field appearance&#x3D;&quot;outline&quot;&gt;
+                                        &lt;mat-label&gt;Skill&lt;/mat-label&gt;
+                                        &lt;input formControlName&#x3D;&quot;name&quot; matInput placeholder&#x3D;&quot;Skill Name&quot;&gt;
+                                    &lt;/mat-form-field&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;mb-2&quot;&gt;
+            &lt;button  mat-raised-button color&#x3D;&quot;primary&quot; (click)&#x3D;&quot;addSkill(experience)&quot;&gt;Add Skill&lt;/button&gt;
+        &lt;/div&gt;
+
+        
+        &lt;div formArrayName&#x3D;&quot;references&quot; *ngFor &#x3D; &quot;let reference of experience.get(&#x27;references&#x27;).controls; let j &#x3D; index&quot;&gt;
+        &lt;!-- reference array --&gt;
+        &lt;div [formGroupName] &#x3D; &quot;j&quot;&gt;
+        &lt;div class&#x3D;&quot;row&quot;&gt;
+
+            &lt;div class&#x3D;&quot;col-md-3&quot;&gt;
+                &lt;mat-form-field appearance&#x3D;&quot;outline&quot;&gt;
+                    &lt;mat-label&gt;Reference&lt;/mat-label&gt;
+                    &lt;input formControlName&#x3D;&quot;name&quot; matInput placeholder&#x3D;&quot;Reference Name&quot;&gt;
+                &lt;/mat-form-field&gt;
+            &lt;/div&gt;
+
+            &lt;div class&#x3D;&quot;col-md-3&quot;&gt;
+                &lt;mat-form-field appearance&#x3D;&quot;outline&quot;&gt;
+                    &lt;mat-label&gt;Job Title&lt;/mat-label&gt;
+                    &lt;input formControlName&#x3D;&quot;jobTitle&quot; matInput placeholder&#x3D;&quot;Job Title&quot;&gt;
+                &lt;/mat-form-field&gt;
+            &lt;/div&gt;
+
+            &lt;div class&#x3D;&quot;col-md-3&quot;&gt;
+                &lt;mat-form-field appearance&#x3D;&quot;outline&quot;&gt;
+                    &lt;mat-label&gt;E-mail&lt;/mat-label&gt;
+                    &lt;input formControlName&#x3D;&quot;email&quot; matInput placeholder&#x3D;&quot;E-mail&quot;&gt;
+                &lt;/mat-form-field&gt;
+            &lt;/div&gt;
+
+
+            &lt;div class&#x3D;&quot;col-md-2&quot;&gt;
+                &lt;mat-form-field appearance&#x3D;&quot;outline&quot;&gt;
+                    &lt;mat-label&gt;Relationship&lt;/mat-label&gt;
+                    &lt;input formControlName&#x3D;&quot;relationship&quot; matInput placeholder&#x3D;&quot;Relationship&quot;&gt;
+                &lt;/mat-form-field&gt;
+            &lt;/div&gt;
+
+            &lt;div class&#x3D;&quot;col-md-1 pt-2&quot;&gt;
+                &lt;button mat-raised-button color&#x3D;&quot;warn&quot; (click)&#x3D;&quot;removeReference(experience,j)&quot;&gt;X&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;!-- reference array --&gt;
+
+        &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+        
+
+        &lt;!-- add references --&gt;
+        &lt;div class&#x3D;&quot;d-flex flex-row-reverse&quot;&gt;
+            &lt;div class&#x3D;&quot;p-2&quot;&gt;
+                &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-outline-primary&quot; (click)&#x3D;&quot;addReference(experience)&quot;&gt;+ Add Referance&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+
+        &lt;div class&#x3D;&quot;row&quot;&gt;
+
+            &lt;div class&#x3D;&quot;col-md-10&quot;&gt;
+                &lt;hr&gt;
+                
+
+                &lt;mat-form-field appearance&#x3D;&quot;outline&quot;&gt;
+                    &lt;mat-label&gt;Job Description&lt;/mat-label&gt;
+                    &lt;textarea formControlName&#x3D;&quot;jobDesc&quot; matInput&gt;&lt;/textarea&gt;
+                &lt;/mat-form-field&gt;
+            &lt;/div&gt;
+
+            &lt;div class&#x3D;&quot;col-md-1 pt-2&quot;&gt;
+                &lt;button mat-raised-button color&#x3D;&quot;warn&quot; (click)&#x3D;&quot;removeExperience(i)&quot;&gt;X&lt;/button&gt;
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;!-- add experiences --&gt;
+&lt;div class&#x3D;&quot;d-flex flex-row-reverse&quot;&gt;
+    &lt;div class&#x3D;&quot;p-2&quot;&gt;
+        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-outline-primary&quot; (click)&#x3D;&quot;addExperiences()&quot;&gt;+ Add Experience&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/form&gt;
+&lt;div class&#x3D;&quot;d-flex justify-content-center&quot;&gt;
+    &lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn btn-primary ml-4&quot; (click)&#x3D;&quot;saveExperienceInfo()&quot;&gt;Save Work Experience&lt;/button&gt;
+&lt;/div&gt;
+&lt;/mat-card&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./user-work-experience.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">mat-form-field{
+    width: 100%;;
+}
+button {
+    min-width: 1%;
+    
+
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><mat-card class="my-2 container-fluid"><form [formGroup]="workExperienceForm" (ngSubmit)="saveExperienceInfo()">    <legend>Your Work Experience</legend>    <div formArrayName="experienceInfos" *ngFor = "let experience of experienceInfos.controls; let i = index">        <div [formGroupName] = "i">        <div class="row">            <div class="col-md-4">                                <mat-form-field appearance="outline">                    <mat-label>Company Name</mat-label>                    <input formControlName="employerName" matInput placeholder="Company Name">                </mat-form-field>            </div>                         <div class="col-md-4">                               <mat-form-field appearance="outline">                    <mat-label>Start Date</mat-label>                    <input matInput formControlName="start" [matDatepicker]="picker1" placeholder="DD-MM-YYYY">                    <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>                    <mat-datepicker #picker1></mat-datepicker>                </mat-form-field>            </div>            <div class="col-md-4">                                <mat-form-field appearance="outline">                    <mat-label>End Date</mat-label>                    <input matInput formControlName="end" [matDatepicker]="picker2" placeholder="DD-MM-YYYY" >                    <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>                    <mat-datepicker #picker2></mat-datepicker>                </mat-form-field>            </div>        </div>        <div class="row">            <div class="col-md-4">                                <mat-form-field appearance="outline">                    <mat-label>Job Title</mat-label>                    <input formControlName="jobTitle" matInput placeholder="Job Title">                </mat-form-field>                <div class="form-group d-inline-flex p-3">                                                             <mat-checkbox formControlName="current"   [pristine]="disableEndDate(experience)" >Currently working here</mat-checkbox>                                                                                              </div>            </div>                                </div>        <hr>        <!-- <div class="row ml-2">             <div *ngFor = "let skill of selected; let i = index" class="mat-elevation-z1 mx-2 p-2" style="background-color: blue; color: white; border-radius: 5px;">                skill.name            </div>         </div> -->        <div formArrayName="skillUsed" *ngFor = "let skill of experience.get(\'skillUsed\').controls; let k = index">            <!-- reference array -->            <div [formGroupName] = "k">                <div class="row">                    <div class="col-md-4" >                                    <mat-form-field appearance="outline">                                        <mat-label>Skill</mat-label>                                        <input formControlName="name" matInput placeholder="Skill Name">                                    </mat-form-field>                    </div>                </div>            </div>        </div>        <div class="mb-2">            <button  mat-raised-button color="primary" (click)="addSkill(experience)">Add Skill</button>        </div>                <div formArrayName="references" *ngFor = "let reference of experience.get(\'references\').controls; let j = index">        <!-- reference array -->        <div [formGroupName] = "j">        <div class="row">            <div class="col-md-3">                <mat-form-field appearance="outline">                    <mat-label>Reference</mat-label>                    <input formControlName="name" matInput placeholder="Reference Name">                </mat-form-field>            </div>            <div class="col-md-3">                <mat-form-field appearance="outline">                    <mat-label>Job Title</mat-label>                    <input formControlName="jobTitle" matInput placeholder="Job Title">                </mat-form-field>            </div>            <div class="col-md-3">                <mat-form-field appearance="outline">                    <mat-label>E-mail</mat-label>                    <input formControlName="email" matInput placeholder="E-mail">                </mat-form-field>            </div>            <div class="col-md-2">                <mat-form-field appearance="outline">                    <mat-label>Relationship</mat-label>                    <input formControlName="relationship" matInput placeholder="Relationship">                </mat-form-field>            </div>            <div class="col-md-1 pt-2">                <button mat-raised-button color="warn" (click)="removeReference(experience,j)">X</button>            </div>            <!-- reference array -->        </div>        </div>        </div>                <!-- add references -->        <div class="d-flex flex-row-reverse">            <div class="p-2">                <button type="button" class="btn btn-outline-primary" (click)="addReference(experience)">+ Add Referance</button>            </div>        </div>        <div class="row">            <div class="col-md-10">                <hr>                                <mat-form-field appearance="outline">                    <mat-label>Job Description</mat-label>                    <textarea formControlName="jobDesc" matInput></textarea>                </mat-form-field>            </div>            <div class="col-md-1 pt-2">                <button mat-raised-button color="warn" (click)="removeExperience(i)">X</button>            </div>        </div>        </div>    </div><!-- add experiences --><div class="d-flex flex-row-reverse">    <div class="p-2">        <button type="button" class="btn btn-outline-primary" (click)="addExperiences()">+ Add Experience</button>    </div></div></form><div class="d-flex justify-content-center">    <button type="submit" class="btn btn-primary ml-4" (click)="saveExperienceInfo()">Save Work Experience</button></div></mat-card></div>'
+    var COMPONENTS = [{'name': 'AboutCandidateComponent', 'selector': 'app-about-candidate'},{'name': 'AboutJobComponent', 'selector': 'app-about-job'},{'name': 'AddExperienceComponent', 'selector': 'app-add-experience'},{'name': 'AllJobsComponent', 'selector': 'app-all-jobs'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CompanyListComponent', 'selector': 'app-company-list'},{'name': 'CompanyMenuComponent', 'selector': 'app-company-menu'},{'name': 'ConfirmDialogComponent', 'selector': 'app-confirm-dialog'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'CreateCompanyComponent', 'selector': 'app-create-company'},{'name': 'CreateNewEmailComponent', 'selector': 'app-create-new-email'},{'name': 'CreateNewPhoneComponent', 'selector': 'app-create-new-phone'},{'name': 'CreatePreferredJobLocationComponent', 'selector': 'app-create-preferred-job-location'},{'name': 'CustomerListComponent', 'selector': 'app-customer-list'},{'name': 'EditExperienceComponent', 'selector': 'app-edit-experience'},{'name': 'EmployeeAccountComponent', 'selector': 'app-employee-account'},{'name': 'EmployerAccountComponent', 'selector': 'app-employer-account'},{'name': 'EmployerQuestionsComponent', 'selector': 'app-employer-questions'},{'name': 'ErrordialogComponent', 'selector': 'app-errordialog'},{'name': 'ExistingReferralComponent', 'selector': 'app-existing-referral'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'ForgetpasswordComponent', 'selector': 'app-forgetpassword'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HomePageComponent', 'selector': 'app-home-page'},{'name': 'InterviewScheduleComponent', 'selector': 'app-interview-schedule'},{'name': 'IntroVideoComponent', 'selector': 'app-intro-video'},{'name': 'JobsInterestedInComponent', 'selector': 'app-jobs-interested-in'},{'name': 'KeyPointsComponent', 'selector': 'app-key-points'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'NavbarComponent', 'selector': 'app-navbar'},{'name': 'PendingReferralRequestComponent', 'selector': 'app-pending-referral-request'},{'name': 'PostJobComponent', 'selector': 'app-post-job'},{'name': 'PreferredJobLocationComponent', 'selector': 'app-preferred-job-location'},{'name': 'RefereeAccountComponent', 'selector': 'app-referee-account'},{'name': 'RefereeScoreComponent', 'selector': 'app-referee-score'},{'name': 'ReferralBonusComponent', 'selector': 'app-referral-bonus'},{'name': 'ReferralReviewPageComponent', 'selector': 'app-referral-review-page'},{'name': 'ReferralReviewRequestComponent', 'selector': 'app-referral-review-request'},{'name': 'ResetpasswordComponent', 'selector': 'app-resetpassword'},{'name': 'SavedJobsComponent', 'selector': 'app-saved-jobs'},{'name': 'SearchAgentComponent', 'selector': 'app-search-agent'},{'name': 'SignupComponent', 'selector': 'app-signup'},{'name': 'SignupconfirmationComponent', 'selector': 'app-signupconfirmation'},{'name': 'SignupLandingComponent', 'selector': 'app-signup-landing'},{'name': 'SystemVideoComponent', 'selector': 'app-system-video'},{'name': 'TestAndOtherDocumentsComponent', 'selector': 'app-test-and-other-documents'},{'name': 'UserDashboardComponent', 'selector': 'app-user-dashboard'},{'name': 'UserEducationComponent', 'selector': 'app-user-education'},{'name': 'UserMenuComponent', 'selector': 'app-user-menu'},{'name': 'UserNamePhotoComponent', 'selector': 'app-user-name-photo'},{'name': 'UserPersonalInfoComponent', 'selector': 'app-user-personal-info'},{'name': 'UserProfileComponent', 'selector': 'app-user-profile'},{'name': 'UserSkillComponent', 'selector': 'app-user-skill'},{'name': 'UserWorkExperienceComponent', 'selector': 'app-user-work-experience'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'UserWorkExperienceComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'UserWorkExperienceComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       
+       <script type="module" src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
