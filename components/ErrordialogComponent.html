@@ -263,8 +263,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="18"
-                            class="link-to-prism">src/app/components/errordialog/errordialog.component.ts:18</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="22"
+                            class="link-to-prism">src/app/components/errordialog/errordialog.component.ts:22</a></div>
                 </td>
             </tr>
 
@@ -300,8 +300,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="13"
-                            class="link-to-prism">src/app/components/errordialog/errordialog.component.ts:13</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="15"
+                            class="link-to-prism">src/app/components/errordialog/errordialog.component.ts:15</a></div>
                 </td>
             </tr>
 
@@ -373,7 +373,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/components/errordialog/errordialog.component.ts:11</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/components/errordialog/errordialog.component.ts:12</a></div>
                         </td>
                     </tr>
 
@@ -404,7 +404,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/components/errordialog/errordialog.component.ts:16</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/components/errordialog/errordialog.component.ts:20</a></div>
                         </td>
                     </tr>
 
@@ -418,27 +418,29 @@
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, Inject } from &#x27;@angular/core&#x27;;
-import { MAT_DIALOG_DATA, MatDialogRef } from &#x27;@angular/material/dialog&#x27;
+import { MAT_DIALOG_DATA, MatDialogRef } from &#x27;@angular/material/dialog&#x27;;
 
 @Component({
   selector: &#x27;app-errordialog&#x27;,
   templateUrl: &#x27;./errordialog.component.html&#x27;,
-  styleUrls: [&#x27;./errordialog.component.css&#x27;]
+  styleUrls: [&#x27;./errordialog.component.css&#x27;],
 })
 export class ErrordialogComponent implements OnInit {
-
-  constructor(@Inject(MAT_DIALOG_DATA) public data, public dilogRef: MatDialogRef&lt;ErrordialogComponent&gt;) { }
+  constructor(
+    @Inject(MAT_DIALOG_DATA) public data,
+    public dilogRef: MatDialogRef&lt;ErrordialogComponent&gt;
+  ) {}
 
   ngOnInit(): void {
+    console.log(&#x27;HTTP responce error:&#x27;);
+    console.log(this.data);
   }
 
   title &#x3D; &#x27;Angular-Interceptor&#x27;;
 
-  closeDialog(){
-    this.dilogRef.close(false)
-}
-  
-
+  closeDialog() {
+    this.dilogRef.close(false);
+  }
 }
 </code></pre>
     </div>
@@ -450,7 +452,7 @@ export class ErrordialogComponent implements OnInit {
   &lt;p&gt;&lt;span class&#x3D;&quot;font-weight-bold&quot;&gt; Status:&lt;/span&gt; {{ data.status }}&lt;/p&gt;
 &lt;/mat-dialog-content&gt;
 &lt;mat-dialog-actions align&#x3D;&quot;end&quot;&gt;
-  &lt;button mat-button mat-dialog-close&gt;Cancel&lt;/button&gt;
+  &lt;button mat-button mat-dialog-close (click)&#x3D;&quot;closeDialog()&quot;&gt;Cancel&lt;/button&gt;
 &lt;/mat-dialog-actions&gt;
 </code></pre>
     </div>
@@ -487,7 +489,7 @@ export class ErrordialogComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><h2 mat-dialog-title class="text-danger">Error Message</h2><mat-dialog-content class="mat-typography">  <p><span class="font-weight-bold">Reason:</span> {{ data.reason }}</p>  <p><span class="font-weight-bold"> Status:</span> {{ data.status }}</p></mat-dialog-content><mat-dialog-actions align="end">  <button mat-button mat-dialog-close>Cancel</button></mat-dialog-actions></div>'
+        var COMPONENT_TEMPLATE = '<div><h2 mat-dialog-title class="text-danger">Error Message</h2><mat-dialog-content class="mat-typography">  <p><span class="font-weight-bold">Reason:</span> {{ data.reason }}</p>  <p><span class="font-weight-bold"> Status:</span> {{ data.status }}</p></mat-dialog-content><mat-dialog-actions align="end">  <button mat-button mat-dialog-close (click)="closeDialog()">Cancel</button></mat-dialog-actions></div>'
     var COMPONENTS = [{'name': 'AboutCandidateComponent', 'selector': 'app-about-candidate'},{'name': 'AboutJobComponent', 'selector': 'app-about-job'},{'name': 'AddExperienceComponent', 'selector': 'app-add-experience'},{'name': 'AllJobsComponent', 'selector': 'app-all-jobs'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CompanyListComponent', 'selector': 'app-company-list'},{'name': 'CompanyMenuComponent', 'selector': 'app-company-menu'},{'name': 'ConfirmDialogComponent', 'selector': 'app-confirm-dialog'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'CreateCompanyComponent', 'selector': 'app-create-company'},{'name': 'CreateNewEmailComponent', 'selector': 'app-create-new-email'},{'name': 'CreateNewPhoneComponent', 'selector': 'app-create-new-phone'},{'name': 'CreatePreferredJobLocationComponent', 'selector': 'app-create-preferred-job-location'},{'name': 'CustomerListComponent', 'selector': 'app-customer-list'},{'name': 'EditExperienceComponent', 'selector': 'app-edit-experience'},{'name': 'EmployeeAccountComponent', 'selector': 'app-employee-account'},{'name': 'EmployerAccountComponent', 'selector': 'app-employer-account'},{'name': 'EmployerQuestionsComponent', 'selector': 'app-employer-questions'},{'name': 'ErrordialogComponent', 'selector': 'app-errordialog'},{'name': 'ExistingReferralComponent', 'selector': 'app-existing-referral'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'ForgetpasswordComponent', 'selector': 'app-forgetpassword'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HomePageComponent', 'selector': 'app-home-page'},{'name': 'InterviewScheduleComponent', 'selector': 'app-interview-schedule'},{'name': 'IntroVideoComponent', 'selector': 'app-intro-video'},{'name': 'JobsInterestedInComponent', 'selector': 'app-jobs-interested-in'},{'name': 'KeyPointsComponent', 'selector': 'app-key-points'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'NavbarComponent', 'selector': 'app-navbar'},{'name': 'PendingReferralRequestComponent', 'selector': 'app-pending-referral-request'},{'name': 'PostJobComponent', 'selector': 'app-post-job'},{'name': 'PreferredJobLocationComponent', 'selector': 'app-preferred-job-location'},{'name': 'RefereeAccountComponent', 'selector': 'app-referee-account'},{'name': 'RefereeScoreComponent', 'selector': 'app-referee-score'},{'name': 'ReferralBonusComponent', 'selector': 'app-referral-bonus'},{'name': 'ReferralReviewPageComponent', 'selector': 'app-referral-review-page'},{'name': 'ReferralReviewRequestComponent', 'selector': 'app-referral-review-request'},{'name': 'ResetpasswordComponent', 'selector': 'app-resetpassword'},{'name': 'SavedJobsComponent', 'selector': 'app-saved-jobs'},{'name': 'SearchAgentComponent', 'selector': 'app-search-agent'},{'name': 'SignupComponent', 'selector': 'app-signup'},{'name': 'SignupconfirmationComponent', 'selector': 'app-signupconfirmation'},{'name': 'SignupLandingComponent', 'selector': 'app-signup-landing'},{'name': 'SystemVideoComponent', 'selector': 'app-system-video'},{'name': 'TestAndOtherDocumentsComponent', 'selector': 'app-test-and-other-documents'},{'name': 'UserDashboardComponent', 'selector': 'app-user-dashboard'},{'name': 'UserEducationComponent', 'selector': 'app-user-education'},{'name': 'UserMenuComponent', 'selector': 'app-user-menu'},{'name': 'UserNamePhotoComponent', 'selector': 'app-user-name-photo'},{'name': 'UserPersonalInfoComponent', 'selector': 'app-user-personal-info'},{'name': 'UserProfileComponent', 'selector': 'app-user-profile'},{'name': 'UserSkillComponent', 'selector': 'app-user-skill'},{'name': 'UserWorkExperienceComponent', 'selector': 'app-user-work-experience'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'ErrordialogComponent'};

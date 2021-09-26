@@ -323,12 +323,13 @@ export class HttpConfigInterceptor implements HttpInterceptor {
 
     return next.handle(request).pipe(
       catchError((error: HttpErrorResponse) &#x3D;&gt; {
+        console.log(&#x27;atual error:&#x27;);
+        console.log(error);
         let data &#x3D; {};
         data &#x3D; {
           reason: error.error,
           status: error.status,
         };
-        console.error(error);
         if (error.error &#x3D;&#x3D;&#x3D; &#x27;invalid token&#x27;) {
           this.errorDialogService.openDialog(data);
           setTimeout(() &#x3D;&gt; {

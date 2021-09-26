@@ -329,10 +329,7 @@ export class ErrordialogService {
     });
 
     dialogRef.afterClosed().subscribe((result) &#x3D;&gt; {
-      console.log(&#x27;The dialog was closed&#x27;);
       this.isDialogOpen &#x3D; false;
-      let animal;
-      animal &#x3D; result;
     });
   }
 }
