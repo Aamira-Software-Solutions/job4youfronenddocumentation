@@ -149,7 +149,13 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
+                                <a href="#goDashboard" >goDashboard</a>
+                            </li>
+                            <li>
                                 <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#topFunction" >topFunction</a>
                             </li>
                         </ul>
                     </td>
@@ -169,12 +175,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(userService: <a href="../injectables/UserProfileService.html" target="_self">UserProfileService</a>)</code>
+<code>constructor(userService: <a href="../injectables/UserProfileService.html" target="_self">UserProfileService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/components/user-profile/user-profile.component.ts:11</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/components/user-profile/user-profile.component.ts:12</a></div>
                             </td>
                         </tr>
 
@@ -196,6 +202,18 @@
                                                   
                                                         <td>
                                                                         <code><a href="../injectables/UserProfileService.html" target="_self" >UserProfileService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -225,6 +243,43 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
+                    <a name="goDashboard"></a>
+                    <span class="name">
+                        <span ><b>goDashboard</b></span>
+                        <a href="#goDashboard"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>goDashboard()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="24"
+                            class="link-to-prism">src/app/components/user-profile/user-profile.component.ts:24</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
                     <a name="ngOnInit"></a>
                     <span class="name">
                         <span ><b>ngOnInit</b></span>
@@ -241,8 +296,45 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="14"
-                            class="link-to-prism">src/app/components/user-profile/user-profile.component.ts:14</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="15"
+                            class="link-to-prism">src/app/components/user-profile/user-profile.component.ts:15</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="topFunction"></a>
+                    <span class="name">
+                        <span ><b>topFunction</b></span>
+                        <a href="#topFunction"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>topFunction()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="19"
+                            class="link-to-prism">src/app/components/user-profile/user-profile.component.ts:19</a></div>
                 </td>
             </tr>
 
@@ -288,7 +380,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/components/user-profile/user-profile.component.ts:11</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/components/user-profile/user-profile.component.ts:12</a></div>
                         </td>
                     </tr>
 
@@ -302,6 +394,7 @@
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
 import { UserProfileService } from &quot;src/app/services/user-profile.service&quot;
 
 @Component({
@@ -312,10 +405,19 @@ import { UserProfileService } from &quot;src/app/services/user-profile.service&q
 export class UserProfileComponent implements OnInit {
 
   message &#x3D; &quot;update your profile&quot;; //send msg to profile avatar caption
-  constructor(private userService: UserProfileService) { }
+  constructor(private userService: UserProfileService, private router: Router) { }
  
   ngOnInit(): void {
     console.log(this.userService.getUserId())
+  }
+
+  topFunction() {
+    document.body.scrollTop &#x3D; 0; // For Safari
+    document.documentElement.scrollTop &#x3D; 0; // For Chrome, Firefox, IE and Opera
+  }
+
+  goDashboard(){
+    this.router.navigate([&#x27;userdashboard&#x27;])
   }
  
 
@@ -327,6 +429,7 @@ export class UserProfileComponent implements OnInit {
         <pre class="line-numbers"><code class="language-html">&lt;app-user-name-photo [caption]&#x3D;&quot;message&quot;&gt;&lt;/app-user-name-photo&gt;
 
 &lt;div class&#x3D;&quot;container&quot;&gt;
+    &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-secondary m-4 mat-elevation-z4&quot; (click)&#x3D;&quot;goDashboard()&quot;&gt;Back To Dashboard&lt;/button&gt;
 &lt;div class&#x3D;&quot;row&quot;&gt;
     &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
         &lt;app-user-personal-info &gt;&lt;/app-user-personal-info&gt;
@@ -350,6 +453,10 @@ export class UserProfileComponent implements OnInit {
         &lt;app-user-work-experience&gt;&lt;/app-user-work-experience&gt;
     &lt;/div&gt;
 &lt;/div&gt;
+&lt;div class&#x3D;&quot;d-flex flex-row-reverse&quot; &gt;
+    &lt;button class&#x3D;&quot;btn btn-secondary rounded-circle btn-lg mat-elevation-z8&quot; (click)&#x3D;&quot;topFunction()&quot; title&#x3D;&quot;Click to return on the top page&quot; data-toggle&#x3D;&quot;tooltip&quot; data-placement&#x3D;&quot;left&quot;&gt;&lt;i class&#x3D;&quot;bi bi-arrow-up-circle-fill&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;/div&gt;
+
 &lt;/div&gt;
 
 
@@ -388,8 +495,8 @@ export class UserProfileComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><app-user-name-photo [caption]="message"></app-user-name-photo><div class="container"><div class="row">    <div class="col-md-12">        <app-user-personal-info ></app-user-personal-info>    </div></div><div class="row">    <div class="col-md-12">        <app-user-skill></app-user-skill>    </div></div><div class="row">    <div class="col-md-12">        <app-user-education></app-user-education>    </div></div><div class="row">    <div class="col-md-12">        <app-user-work-experience></app-user-work-experience>    </div></div></div></div>'
-    var COMPONENTS = [{'name': 'AboutCandidateComponent', 'selector': 'app-about-candidate'},{'name': 'AboutJobComponent', 'selector': 'app-about-job'},{'name': 'AddExperienceComponent', 'selector': 'app-add-experience'},{'name': 'AllJobsComponent', 'selector': 'app-all-jobs'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CompanyListComponent', 'selector': 'app-company-list'},{'name': 'CompanyMenuComponent', 'selector': 'app-company-menu'},{'name': 'ConfirmDialogComponent', 'selector': 'app-confirm-dialog'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'CreateCompanyComponent', 'selector': 'app-create-company'},{'name': 'CreateNewEmailComponent', 'selector': 'app-create-new-email'},{'name': 'CreateNewPhoneComponent', 'selector': 'app-create-new-phone'},{'name': 'CreatePreferredJobLocationComponent', 'selector': 'app-create-preferred-job-location'},{'name': 'CustomerListComponent', 'selector': 'app-customer-list'},{'name': 'EditExperienceComponent', 'selector': 'app-edit-experience'},{'name': 'EmployeeAccountComponent', 'selector': 'app-employee-account'},{'name': 'EmployerAccountComponent', 'selector': 'app-employer-account'},{'name': 'EmployerQuestionsComponent', 'selector': 'app-employer-questions'},{'name': 'ErrordialogComponent', 'selector': 'app-errordialog'},{'name': 'ExistingReferralComponent', 'selector': 'app-existing-referral'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'ForgetpasswordComponent', 'selector': 'app-forgetpassword'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HomePageComponent', 'selector': 'app-home-page'},{'name': 'InterviewScheduleComponent', 'selector': 'app-interview-schedule'},{'name': 'IntroVideoComponent', 'selector': 'app-intro-video'},{'name': 'JobsInterestedInComponent', 'selector': 'app-jobs-interested-in'},{'name': 'KeyPointsComponent', 'selector': 'app-key-points'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'NavbarComponent', 'selector': 'app-navbar'},{'name': 'PendingReferralRequestComponent', 'selector': 'app-pending-referral-request'},{'name': 'PostJobComponent', 'selector': 'app-post-job'},{'name': 'PreferredJobLocationComponent', 'selector': 'app-preferred-job-location'},{'name': 'RefereeAccountComponent', 'selector': 'app-referee-account'},{'name': 'RefereeScoreComponent', 'selector': 'app-referee-score'},{'name': 'ReferralBonusComponent', 'selector': 'app-referral-bonus'},{'name': 'ReferralReviewPageComponent', 'selector': 'app-referral-review-page'},{'name': 'ReferralReviewRequestComponent', 'selector': 'app-referral-review-request'},{'name': 'ResetpasswordComponent', 'selector': 'app-resetpassword'},{'name': 'SavedJobsComponent', 'selector': 'app-saved-jobs'},{'name': 'SearchAgentComponent', 'selector': 'app-search-agent'},{'name': 'SignupComponent', 'selector': 'app-signup'},{'name': 'SignupconfirmationComponent', 'selector': 'app-signupconfirmation'},{'name': 'SignupLandingComponent', 'selector': 'app-signup-landing'},{'name': 'SystemVideoComponent', 'selector': 'app-system-video'},{'name': 'TestAndOtherDocumentsComponent', 'selector': 'app-test-and-other-documents'},{'name': 'UserDashboardComponent', 'selector': 'app-user-dashboard'},{'name': 'UserEducationComponent', 'selector': 'app-user-education'},{'name': 'UserMenuComponent', 'selector': 'app-user-menu'},{'name': 'UserNamePhotoComponent', 'selector': 'app-user-name-photo'},{'name': 'UserPersonalInfoComponent', 'selector': 'app-user-personal-info'},{'name': 'UserProfileComponent', 'selector': 'app-user-profile'},{'name': 'UserSkillComponent', 'selector': 'app-user-skill'},{'name': 'UserWorkExperienceComponent', 'selector': 'app-user-work-experience'}];
+        var COMPONENT_TEMPLATE = '<div><app-user-name-photo [caption]="message"></app-user-name-photo><div class="container">    <button type="button" class="btn btn-secondary m-4 mat-elevation-z4" (click)="goDashboard()">Back To Dashboard</button><div class="row">    <div class="col-md-12">        <app-user-personal-info ></app-user-personal-info>    </div></div><div class="row">    <div class="col-md-12">        <app-user-skill></app-user-skill>    </div></div><div class="row">    <div class="col-md-12">        <app-user-education></app-user-education>    </div></div><div class="row">    <div class="col-md-12">        <app-user-work-experience></app-user-work-experience>    </div></div><div class="d-flex flex-row-reverse" >    <button class="btn btn-secondary rounded-circle btn-lg mat-elevation-z8" (click)="topFunction()" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><i class="bi bi-arrow-up-circle-fill"></i></button></div></div></div>'
+    var COMPONENTS = [{'name': 'AboutCandidateComponent', 'selector': 'app-about-candidate'},{'name': 'AboutJobComponent', 'selector': 'app-about-job'},{'name': 'AddExperienceComponent', 'selector': 'app-add-experience'},{'name': 'AllJobsComponent', 'selector': 'app-all-jobs'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CompanyListComponent', 'selector': 'app-company-list'},{'name': 'CompanyMenuComponent', 'selector': 'app-company-menu'},{'name': 'ConfirmDialogComponent', 'selector': 'app-confirm-dialog'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'CreateCompanyComponent', 'selector': 'app-create-company'},{'name': 'CreateNewEmailComponent', 'selector': 'app-create-new-email'},{'name': 'CreateNewPhoneComponent', 'selector': 'app-create-new-phone'},{'name': 'CreatePreferredJobLocationComponent', 'selector': 'app-create-preferred-job-location'},{'name': 'CustomerListComponent', 'selector': 'app-customer-list'},{'name': 'EditExperienceComponent', 'selector': 'app-edit-experience'},{'name': 'EmployeeAccountComponent', 'selector': 'app-employee-account'},{'name': 'EmployerAccountComponent', 'selector': 'app-employer-account'},{'name': 'EmployerQuestionsComponent', 'selector': 'app-employer-questions'},{'name': 'Error404Component', 'selector': 'app-error404'},{'name': 'ErrordialogComponent', 'selector': 'app-errordialog'},{'name': 'ExistingReferralComponent', 'selector': 'app-existing-referral'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'ForgetpasswordComponent', 'selector': 'app-forgetpassword'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HomePageComponent', 'selector': 'app-home-page'},{'name': 'InterviewScheduleComponent', 'selector': 'app-interview-schedule'},{'name': 'IntroVideoComponent', 'selector': 'app-intro-video'},{'name': 'JobsInterestedInComponent', 'selector': 'app-jobs-interested-in'},{'name': 'KeyPointsComponent', 'selector': 'app-key-points'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'PendingReferralRequestComponent', 'selector': 'app-pending-referral-request'},{'name': 'PostJobComponent', 'selector': 'app-post-job'},{'name': 'PreferredJobLocationComponent', 'selector': 'app-preferred-job-location'},{'name': 'RefereeAccountComponent', 'selector': 'app-referee-account'},{'name': 'RefereeScoreComponent', 'selector': 'app-referee-score'},{'name': 'ReferralBonusComponent', 'selector': 'app-referral-bonus'},{'name': 'ReferralReviewPageComponent', 'selector': 'app-referral-review-page'},{'name': 'ReferralReviewRequestComponent', 'selector': 'app-referral-review-request'},{'name': 'ResetpasswordComponent', 'selector': 'app-resetpassword'},{'name': 'SavedJobsComponent', 'selector': 'app-saved-jobs'},{'name': 'SearchAgentComponent', 'selector': 'app-search-agent'},{'name': 'SignupComponent', 'selector': 'app-signup'},{'name': 'SignupconfirmationComponent', 'selector': 'app-signupconfirmation'},{'name': 'SignupLandingComponent', 'selector': 'app-signup-landing'},{'name': 'SystemVideoComponent', 'selector': 'app-system-video'},{'name': 'TestAndOtherDocumentsComponent', 'selector': 'app-test-and-other-documents'},{'name': 'UserDashboardComponent', 'selector': 'app-user-dashboard'},{'name': 'UserEducationComponent', 'selector': 'app-user-education'},{'name': 'UserMenuComponent', 'selector': 'app-user-menu'},{'name': 'UserNamePhotoComponent', 'selector': 'app-user-name-photo'},{'name': 'UserPersonalInfoComponent', 'selector': 'app-user-personal-info'},{'name': 'UserProfileComponent', 'selector': 'app-user-profile'},{'name': 'UserSkillComponent', 'selector': 'app-user-skill'},{'name': 'UserWorkExperienceComponent', 'selector': 'app-user-work-experience'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'UserProfileComponent'};
 </script>
@@ -404,14 +511,14 @@ export class UserProfileComponent implements OnInit {
 
 
 
-                   
+
 
 
 
 
                    </div><div class="search-results">
     <div class="has-results">
-        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
         <ul class="search-results-list"></ul>
     </div>
     <div class="no-results">
@@ -432,8 +539,8 @@ export class UserProfileComponent implements OnInit {
 
        <script src="../js/libs/custom-elements.min.js"></script>
        <script src="../js/libs/lit-html.js"></script>
-       
-       <script type="module" src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/menu-wc.js" defer></script>
        <script nomodule src="../js/menu-wc_es5.js" defer></script>
 
        <script src="../js/libs/bootstrap-native.js"></script>

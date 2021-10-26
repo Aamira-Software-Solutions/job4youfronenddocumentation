@@ -275,6 +275,7 @@
 
                     <div class="io-description">
                         <b>Parameters :</b>
+                        
                         <table class="params">
                             <thead>
                                 <tr>
@@ -339,6 +340,7 @@
 
                     <div class="io-description">
                         <b>Parameters :</b>
+                        
                         <table class="params">
                             <thead>
                                 <tr>
@@ -403,6 +405,7 @@
 
                     <div class="io-description">
                         <b>Parameters :</b>
+                        
                         <table class="params">
                             <thead>
                                 <tr>
@@ -467,6 +470,7 @@
 
                     <div class="io-description">
                         <b>Parameters :</b>
+                        
                         <table class="params">
                             <thead>
                                 <tr>
@@ -679,6 +683,7 @@
 
                     <div class="io-description">
                         <b>Parameters :</b>
+                        
                         <table class="params">
                             <thead>
                                 <tr>
@@ -752,6 +757,7 @@
 
                     <div class="io-description">
                         <b>Parameters :</b>
+                        
                         <table class="params">
                             <thead>
                                 <tr>
@@ -936,6 +942,7 @@
 
                     <div class="io-description">
                         <b>Parameters :</b>
+                        
                         <table class="params">
                             <thead>
                                 <tr>
@@ -1000,6 +1007,7 @@
 
                     <div class="io-description">
                         <b>Parameters :</b>
+                        
                         <table class="params">
                             <thead>
                                 <tr>
@@ -1064,6 +1072,7 @@
 
                     <div class="io-description">
                         <b>Parameters :</b>
+                        
                         <table class="params">
                             <thead>
                                 <tr>
@@ -1132,6 +1141,7 @@
 
                     <div class="io-description">
                         <b>Parameters :</b>
+                        
                         <table class="params">
                             <thead>
                                 <tr>
@@ -1196,6 +1206,7 @@
 
                     <div class="io-description">
                         <b>Parameters :</b>
+                        
                         <table class="params">
                             <thead>
                                 <tr>
@@ -1260,6 +1271,7 @@
 
                     <div class="io-description">
                         <b>Parameters :</b>
+                        
                         <table class="params">
                             <thead>
                                 <tr>
@@ -1324,6 +1336,7 @@
 
                     <div class="io-description">
                         <b>Parameters :</b>
+                        
                         <table class="params">
                             <thead>
                                 <tr>
@@ -1388,6 +1401,7 @@
 
                     <div class="io-description">
                         <b>Parameters :</b>
+                        
                         <table class="params">
                             <thead>
                                 <tr>
@@ -1626,23 +1640,23 @@ getUserName(){
 
 
   getContacts(): Observable&lt;any&gt;{
-    return this.http.get&lt;any&gt;(signupUrl+&quot;/&quot;+this.userId+&quot;?fields&#x3D;contact&quot;);
+    return this.http.get&lt;any&gt;(signupUrl+&quot;?fields&#x3D;contact&quot;);
   }
 
   getAddress(): Observable&lt;any&gt;{
-    return this.http.get&lt;any&gt;(signupUrl+&quot;/&quot;+this.userId+&quot;?fields&#x3D;address&quot;);
+    return this.http.get&lt;any&gt;(signupUrl+&quot;?fields&#x3D;address&quot;);
   }
 
   putContact(contact): Observable&lt;any&gt;{ 
-    return this.http.put&lt;any&gt;(signupUrl+&quot;/&quot;+this.userId+&quot;/contact&quot;,contact);
+    return this.http.put&lt;any&gt;(signupUrl+&quot;/contact&quot;,contact);
   }
 
   deletePhone(id){
-    return this.http.delete&lt;any&gt;(signupUrl+&quot;/&quot;+this.userId+&quot;/contact/phone/&quot;+id)
+    return this.http.delete&lt;any&gt;(signupUrl+&quot;/contact/phone/&quot;+id)
   }
 
   deleteEmail(id){
-    return this.http.delete&lt;any&gt;(signupUrl+&quot;/&quot;+this.userId+&quot;/contact/email/&quot;+id)
+    return this.http.delete&lt;any&gt;(signupUrl+&quot;/contact/email/&quot;+id)
   }
 
   addCompany(company){
@@ -1654,11 +1668,11 @@ getUserName(){
   }
 
   getCompany(){
-    return this.http.get&lt;any&gt;(signupUrl+&quot;/&quot;+this.userId+&quot;?fields&#x3D;associatedCompany&quot;)
+    return this.http.get&lt;any&gt;(signupUrl+&quot;?fields&#x3D;associatedCompany&quot;)
   }
 
   getPendingReferralUser(){
-    return this.http.get&lt;any&gt;(signupUrl+&quot;/&quot; +this.userId+&quot;?fields&#x3D;referral&amp;status&#x3D;pending&quot;)
+    return this.http.get&lt;any&gt;(signupUrl+&quot;?fields&#x3D;referral&amp;status&#x3D;pending&quot;)
   }
 
   getExistingReferral(requestor, referee){
@@ -1685,14 +1699,14 @@ getUserName(){
 
 
 
-                   
+
 
 
 
 
                    </div><div class="search-results">
     <div class="has-results">
-        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
         <ul class="search-results-list"></ul>
     </div>
     <div class="no-results">
@@ -1713,8 +1727,8 @@ getUserName(){
 
        <script src="../js/libs/custom-elements.min.js"></script>
        <script src="../js/libs/lit-html.js"></script>
-       
-       <script type="module" src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/menu-wc.js" defer></script>
        <script nomodule src="../js/menu-wc_es5.js" defer></script>
 
        <script src="../js/libs/bootstrap-native.js"></script>

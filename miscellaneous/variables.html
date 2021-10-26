@@ -44,7 +44,7 @@
 
 
 
-                   
+
 
 <ol class="breadcrumb">
   <li>Miscellaneous</li>
@@ -59,13 +59,13 @@
                 <td class="col-md-4">
                     <ul class="index-list">
                         <li>
-                            <a href="#baseUrl" title="src/app/config/api.ts" ><b>baseUrl</b>&nbsp;&nbsp;&nbsp;(src/.../api.ts)</a>
+                            <a href="#environment" title="src/environments/environment.prod.ts" ><b>environment</b>&nbsp;&nbsp;&nbsp;(src/.../environment.prod.ts)</a>
                         </li>
                         <li>
                             <a href="#environment" title="src/environments/environment.ts" ><b>environment</b>&nbsp;&nbsp;&nbsp;(src/.../environment.ts)</a>
                         </li>
                         <li>
-                            <a href="#environment" title="src/environments/environment.prod.ts" ><b>environment</b>&nbsp;&nbsp;&nbsp;(src/.../environment.prod.ts)</a>
+                            <a href="#getPhotourl" title="src/app/config/api.ts" ><b>getPhotourl</b>&nbsp;&nbsp;&nbsp;(src/.../api.ts)</a>
                         </li>
                         <li>
                             <a href="#jobsMayInterested" title="src/app/components/user-dashboard/employee-account/jobs-interested-in/jobs-interested-in.component.ts" ><b>jobsMayInterested</b>&nbsp;&nbsp;&nbsp;(src/.../jobs-interested-in.component.ts)</a>
@@ -92,6 +92,9 @@
                             <a href="#savedJob" title="src/app/components/user-dashboard/employee-account/saved-jobs/saved-jobs.component.ts" ><b>savedJob</b>&nbsp;&nbsp;&nbsp;(src/.../saved-jobs.component.ts)</a>
                         </li>
                         <li>
+                            <a href="#sendPhotoUrl" title="src/app/config/api.ts" ><b>sendPhotoUrl</b>&nbsp;&nbsp;&nbsp;(src/.../api.ts)</a>
+                        </li>
+                        <li>
                             <a href="#signupUrl" title="src/app/config/api.ts" ><b>signupUrl</b>&nbsp;&nbsp;&nbsp;(src/.../api.ts)</a>
                         </li>
                         <li>
@@ -104,170 +107,30 @@
     </table>
 </section>
 
-    <h3>src/app/config/api.ts</h3>
+    <h3>src/environments/environment.prod.ts</h3>
     <section>
     <h3></h3>    <table class="table table-sm table-bordered">
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="baseUrl"></a>
+                    <a name="environment"></a>
                     <span class="name">
-                        <span ><b>baseUrl</b></span>
-                        <a href="#baseUrl"><span class="icon ion-ios-link"></span></a>
+                        <span ><b>environment</b></span>
+                        <a href="#environment"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
                 <tr>
                     <td class="col-md-4">
-                        <i>Default value : </i><code>environment.production
-  ? &#x27;https://api.job4you.com&#x27;
-  : &#x27;http://localhost:8080/api/&#x27;</code>
-                    </td>
-                </tr>
-
-
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="loginUrl"></a>
-                    <span class="name">
-                        <span ><b>loginUrl</b></span>
-                        <a href="#loginUrl"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Default value : </i><code>proxyUrl + &#x27;users/login&#x27;</code>
-                    </td>
-                </tr>
-
-
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="logOutUrl"></a>
-                    <span class="name">
-                        <span ><b>logOutUrl</b></span>
-                        <a href="#logOutUrl"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Default value : </i><code>proxyUrl + &#x27;users/logout&#x27;</code>
-                    </td>
-                </tr>
-
-
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="proxyUrl"></a>
-                    <span class="name">
-                        <span ><b>proxyUrl</b></span>
-                        <a href="#proxyUrl"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
 
                     </td>
                 </tr>
                 <tr>
                     <td class="col-md-4">
-                        <i>Default value : </i><code>&#x27;/api/&#x27;</code>
-                    </td>
-                </tr>
-
-
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="resendVrificationUrl"></a>
-                    <span class="name">
-                        <span ><b>resendVrificationUrl</b></span>
-                        <a href="#resendVrificationUrl"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Default value : </i><code>proxyUrl + &#x27;users/resend-verification-link/&#x27;</code>
-                    </td>
-                </tr>
-
-
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="resetPasswordUrl"></a>
-                    <span class="name">
-                        <span ><b>resetPasswordUrl</b></span>
-                        <a href="#resetPasswordUrl"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Default value : </i><code>proxyUrl + &#x27;users/reset-password&#x27;</code>
-                    </td>
-                </tr>
-
-
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="signupUrl"></a>
-                    <span class="name">
-                        <span ><b>signupUrl</b></span>
-                        <a href="#signupUrl"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Default value : </i><code>proxyUrl + &#x27;users&#x27;</code>
-                    </td>
-                </tr>
-
-
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="verificationUrl"></a>
-                    <span class="name">
-                        <span ><b>verificationUrl</b></span>
-                        <a href="#verificationUrl"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Default value : </i><code>proxyUrl + &#x27;users/verification&#x27;</code>
+                        <i>Default value : </i><code>{
+  production: true
+}</code>
                     </td>
                 </tr>
 
@@ -306,30 +169,188 @@
         </tbody>
     </table>
 </section>
-    <h3>src/environments/environment.prod.ts</h3>
+    <h3>src/app/config/api.ts</h3>
     <section>
     <h3></h3>    <table class="table table-sm table-bordered">
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="environment"></a>
+                    <a name="getPhotourl"></a>
                     <span class="name">
-                        <span ><b>environment</b></span>
-                        <a href="#environment"><span class="icon ion-ios-link"></span></a>
+                        <span ><b>getPhotourl</b></span>
+                        <a href="#getPhotourl"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
                 <tr>
                     <td class="col-md-4">
-                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+                        <i>Default value : </i><code>proxyUrl + &quot;users/profile-picture&quot;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loginUrl"></a>
+                    <span class="name">
+                        <span ><b>loginUrl</b></span>
+                        <a href="#loginUrl"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>proxyUrl + &quot;users/login&quot;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="logOutUrl"></a>
+                    <span class="name">
+                        <span ><b>logOutUrl</b></span>
+                        <a href="#logOutUrl"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>proxyUrl + &quot;users/logout&quot;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="proxyUrl"></a>
+                    <span class="name">
+                        <span ><b>proxyUrl</b></span>
+                        <a href="#proxyUrl"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
 
                     </td>
                 </tr>
                 <tr>
                     <td class="col-md-4">
-                        <i>Default value : </i><code>{
-  production: true
-}</code>
+                        <i>Default value : </i><code>&quot;/api/&quot;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resendVrificationUrl"></a>
+                    <span class="name">
+                        <span ><b>resendVrificationUrl</b></span>
+                        <a href="#resendVrificationUrl"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>proxyUrl + &quot;users/resend-verification-link/&quot;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resetPasswordUrl"></a>
+                    <span class="name">
+                        <span ><b>resetPasswordUrl</b></span>
+                        <a href="#resetPasswordUrl"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>proxyUrl + &#x27;users/reset-password&#x27;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sendPhotoUrl"></a>
+                    <span class="name">
+                        <span ><b>sendPhotoUrl</b></span>
+                        <a href="#sendPhotoUrl"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>proxyUrl + &quot;users/upload-profile-picture&quot;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="signupUrl"></a>
+                    <span class="name">
+                        <span ><b>signupUrl</b></span>
+                        <a href="#signupUrl"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>proxyUrl + &quot;users&quot;</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="verificationUrl"></a>
+                    <span class="name">
+                        <span ><b>verificationUrl</b></span>
+                        <a href="#verificationUrl"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>proxyUrl + &quot;users/verification&quot;</code>
                     </td>
                 </tr>
 
@@ -464,7 +485,7 @@
 
                    </div><div class="search-results">
     <div class="has-results">
-        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
         <ul class="search-results-list"></ul>
     </div>
     <div class="no-results">
@@ -485,8 +506,8 @@
 
        <script src="../js/libs/custom-elements.min.js"></script>
        <script src="../js/libs/lit-html.js"></script>
-       
-       <script type="module" src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/menu-wc.js" defer></script>
        <script nomodule src="../js/menu-wc_es5.js" defer></script>
 
        <script src="../js/libs/bootstrap-native.js"></script>

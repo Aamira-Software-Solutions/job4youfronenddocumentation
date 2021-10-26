@@ -182,6 +182,18 @@
                                 <a href="#disableEndDate" >disableEndDate</a>
                             </li>
                             <li>
+                                <a href="#endDateError" >endDateError</a>
+                            </li>
+                            <li>
+                                <a href="#experienceDateValidate" >experienceDateValidate</a>
+                            </li>
+                            <li>
+                                <a href="#getEndDate" >getEndDate</a>
+                            </li>
+                            <li>
+                                <a href="#getStartDate" >getStartDate</a>
+                            </li>
+                            <li>
                                 <a href="#lockSkill" >lockSkill</a>
                             </li>
                             <li>
@@ -192,6 +204,9 @@
                             </li>
                             <li>
                                 <a href="#removeReference" >removeReference</a>
+                            </li>
+                            <li>
+                                <a href="#removeSkill" >removeSkill</a>
                             </li>
                             <li>
                                 <a href="#saveExperienceInfo" >saveExperienceInfo</a>
@@ -246,12 +261,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(fb: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, userService: <a href="../injectables/UserProfileService.html" target="_self">UserProfileService</a>)</code>
+<code>constructor(fb: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>, userService: <a href="../injectables/UserProfileService.html" target="_self">UserProfileService</a>, confirmDialog: <a href="../injectables/DialogService.html" target="_self">DialogService</a>)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:31</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:32</a></div>
                             </td>
                         </tr>
 
@@ -285,6 +300,18 @@
                                                   
                                                         <td>
                                                                         <code><a href="../injectables/UserProfileService.html" target="_self" >UserProfileService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>confirmDialog</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/DialogService.html" target="_self" >DialogService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -330,8 +357,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="109"
-                            class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:109</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="175"
+                            class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:175</a></div>
                 </td>
             </tr>
 
@@ -367,8 +394,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="113"
-                            class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:113</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="179"
+                            class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:179</a></div>
                 </td>
             </tr>
 
@@ -378,6 +405,7 @@
 
                     <div class="io-description">
                         <b>Parameters :</b>
+                        
                         <table class="params">
                             <thead>
                                 <tr>
@@ -431,8 +459,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="117"
-                            class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:117</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="183"
+                            class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:183</a></div>
                 </td>
             </tr>
 
@@ -442,6 +470,7 @@
 
                     <div class="io-description">
                         <b>Parameters :</b>
+                        
                         <table class="params">
                             <thead>
                                 <tr>
@@ -495,8 +524,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="57"
-                            class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:57</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="59"
+                            class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:59</a></div>
                 </td>
             </tr>
 
@@ -506,6 +535,7 @@
 
                     <div class="io-description">
                         <b>Parameters :</b>
+                        
                         <table class="params">
                             <thead>
                                 <tr>
@@ -543,6 +573,293 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
+                    <a name="endDateError"></a>
+                    <span class="name">
+                        <span ><b>endDateError</b></span>
+                        <a href="#endDateError"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>endDateError(start, end)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="154"
+                            class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:154</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>start</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>end</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="experienceDateValidate"></a>
+                    <span class="name">
+                        <span ><b>experienceDateValidate</b></span>
+                        <a href="#experienceDateValidate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>experienceDateValidate(start: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, end: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="121"
+                            class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:121</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>validate end date is greater then start date</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>start</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>end</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>(formGroup: any) &#x3D;&gt; { match: string; }</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getEndDate"></a>
+                    <span class="name">
+                        <span ><b>getEndDate</b></span>
+                        <a href="#getEndDate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getEndDate(i)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="96"
+                            class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:96</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>i</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getStartDate"></a>
+                    <span class="name">
+                        <span ><b>getStartDate</b></span>
+                        <a href="#getStartDate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getStartDate(i)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="103"
+                            class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:103</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>i</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
                     <a name="lockSkill"></a>
                     <span class="name">
                         <span ><b>lockSkill</b></span>
@@ -559,8 +876,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="185"
-                            class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:185</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="254"
+                            class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:254</a></div>
                 </td>
             </tr>
 
@@ -570,6 +887,7 @@
 
                     <div class="io-description">
                         <b>Parameters :</b>
+                        
                         <table class="params">
                             <thead>
                                 <tr>
@@ -623,8 +941,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="54"
-                            class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:54</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="56"
+                            class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:56</a></div>
                 </td>
             </tr>
 
@@ -660,8 +978,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="122"
-                            class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:122</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="191"
+                            class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:191</a></div>
                 </td>
             </tr>
 
@@ -671,6 +989,7 @@
 
                     <div class="io-description">
                         <b>Parameters :</b>
+                        
                         <table class="params">
                             <thead>
                                 <tr>
@@ -728,8 +1047,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="126"
-                            class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:126</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="195"
+                            class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:195</a></div>
                 </td>
             </tr>
 
@@ -739,6 +1058,7 @@
 
                     <div class="io-description">
                         <b>Parameters :</b>
+                        
                         <table class="params">
                             <thead>
                                 <tr>
@@ -791,6 +1111,86 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
+                    <a name="removeSkill"></a>
+                    <span class="name">
+                        <span ><b>removeSkill</b></span>
+                        <a href="#removeSkill"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>removeSkill(experience, j: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="186"
+                            class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:186</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>experience</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>j</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
                     <a name="saveExperienceInfo"></a>
                     <span class="name">
                         <span ><b>saveExperienceInfo</b></span>
@@ -807,8 +1207,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="201"
-                            class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:201</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="270"
+                            class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:270</a></div>
                 </td>
             </tr>
 
@@ -844,8 +1244,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="130"
-                            class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:130</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="199"
+                            class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:199</a></div>
                 </td>
             </tr>
 
@@ -881,8 +1281,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="152"
-                            class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:152</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="221"
+                            class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:221</a></div>
                 </td>
             </tr>
 
@@ -892,6 +1292,7 @@
 
                     <div class="io-description">
                         <b>Parameters :</b>
+                        
                         <table class="params">
                             <thead>
                                 <tr>
@@ -945,8 +1346,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="165"
-                            class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:165</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="234"
+                            class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:234</a></div>
                 </td>
             </tr>
 
@@ -956,6 +1357,7 @@
 
                     <div class="io-description">
                         <b>Parameters :</b>
+                        
                         <table class="params">
                             <thead>
                                 <tr>
@@ -1014,7 +1416,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:27</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:28</a></div>
                         </td>
                     </tr>
 
@@ -1039,7 +1441,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:56</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:58</a></div>
                         </td>
                     </tr>
 
@@ -1079,7 +1481,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:14</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:15</a></div>
                         </td>
                     </tr>
 
@@ -1110,7 +1512,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:29</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:30</a></div>
                         </td>
                     </tr>
 
@@ -1136,7 +1538,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:31</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:32</a></div>
                         </td>
                     </tr>
 
@@ -1167,7 +1569,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:24</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:25</a></div>
                         </td>
                     </tr>
 
@@ -1193,7 +1595,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:30</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:31</a></div>
                         </td>
                     </tr>
 
@@ -1219,7 +1621,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:28</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:29</a></div>
                         </td>
                     </tr>
 
@@ -1248,7 +1650,7 @@
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="67" class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:67</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="69" class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:69</a></div>
                                 </td>
                             </tr>
 
@@ -1270,7 +1672,7 @@
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="74" class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:74</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="76" class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:76</a></div>
                                 </td>
                             </tr>
 
@@ -1292,7 +1694,7 @@
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="91" class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:91</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="111" class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:111</a></div>
                                 </td>
                             </tr>
 
@@ -1314,7 +1716,7 @@
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="100" class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:100</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="166" class="link-to-prism">src/app/components/user-profile/user-work-experience/user-work-experience.component.ts:166</a></div>
                                 </td>
                             </tr>
 
@@ -1327,6 +1729,7 @@
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
 import { FormGroup, FormBuilder, FormArray, FormControl, Validators } from &#x27;@angular/forms&#x27;;
+import { DialogService } from &#x27;src/app/services/dialog.service&#x27;;
 
 import { UserProfileService } from &quot;src/app/services/user-profile.service&quot;
 
@@ -1358,7 +1761,7 @@ export class UserWorkExperienceComponent implements OnInit {
   oldArrayLen:any;
   
 
-  constructor(private fb: FormBuilder, private userService: UserProfileService) { 
+  constructor(private fb: FormBuilder, private userService: UserProfileService, private confirmDialog: DialogService) { 
 
     this.userService.getExperiences().subscribe(
       (success) &#x3D;&gt; {
@@ -1376,6 +1779,7 @@ export class UserWorkExperienceComponent implements OnInit {
         //this.newExperience
       ])
     })
+    
   }
 
   ngOnInit(): void {
@@ -1413,14 +1817,78 @@ export class UserWorkExperienceComponent implements OnInit {
       start: &#x27;&#x27;,
       end: &#x27;&#x27;,
       junk:&#x27;&#x27;
+    },{
+      validator: this.experienceDateValidate(&#x27;start&#x27;,&#x27;end&#x27;)
     })
   }
+
+ getEndDate(i){
+   if(this.experienceInfos.controls.length !&#x3D; 0){
+    return this.experienceInfos.controls[i].get(&#x27;end&#x27;);
+   }else{
+     return null
+   }
+}
+getStartDate(i){
+  if(this.experienceInfos.controls.length !&#x3D; 0){
+   return this.experienceInfos.controls[i].get(&#x27;start&#x27;);
+  }else{
+    return null
+  }
+}
+
 get skillUsed(): FormGroup{
   return this.fb.group({
     name:&#x27;&#x27;
   })
 }
 
+/**
+ * validate end date is greater then start date
+ */
+
+ experienceDateValidate(start:string, end:string){
+   return (formGroup: FormGroup)&#x3D;&gt;{
+    //  const startControl &#x3D; formGroup.controls[start];
+    //  const endControl &#x3D; formGroup.controls[end]
+
+    // if(!startControl || !endControl){
+    //   return null;
+    // }
+
+    // if(startControl.errors &amp;&amp; !endControl.errors.notValid){
+    //   return null;
+    // }
+
+    // const startDate &#x3D; new Date(start).getTime()
+    // const endDate &#x3D; new Date(end).getTime()
+
+    // if(endDate &gt;&#x3D; startDate){
+    //   endControl.setErrors({notValid:true})
+    // } else{
+    //   endControl.setErrors(null)
+    //}
+    let field1Value &#x3D; formGroup.get(start).value;
+    let field2Value &#x3D; formGroup.get(end).value;
+
+    if (field1Value !&#x3D;&#x3D; &#x27;&#x27; &amp;&amp; field1Value !&#x3D;&#x3D; field2Value) {
+      return { &#x27;match&#x27;: &#x60;value ${field1Value} is not equal to ${field2Value}&#x60; }
+    }
+    return null;
+
+
+   }
+ }
+
+ endDateError(start, end){
+   const startDate &#x3D; new Date(start.value).getTime()
+   const endDate &#x3D; new Date(end.value).getTime()
+    if(endDate &lt;&#x3D; startDate){
+       return true
+     } else{
+       return false
+    }
+ }
  
 
 // Reference array with groups
@@ -1443,6 +1911,9 @@ addReference(experience): void{
 
 addSkill(experience):void{
   experience.get(&#x27;skillUsed&#x27;).push(this.skillUsed)
+}
+removeSkill(experience,j:number):void{
+  experience.get(&#x27;skillUsed&#x27;).removeAt(j);
 }
 
 
@@ -1547,14 +2018,17 @@ addSkill(experience):void{
     }
       console.log(&quot;clicked&quot;)
     
-         this.userService.sendExperience(this.workExperienceForm.value.experienceInfos).subscribe(
-           (success) &#x3D;&gt; {
-             console.log(success);
-           },
-           (err) &#x3D;&gt; {
-             console.log(err)
-           }
-         )
+        if(!this.workExperienceForm.invalid){
+          this.userService.sendExperience(this.workExperienceForm.value.experienceInfos).subscribe(
+            (success) &#x3D;&gt; {
+              console.log(success);
+              this.confirmDialog.openConfirmDialog(&quot;Experience Successfully Updated&quot;)
+            },
+            (err) &#x3D;&gt; {
+              console.log(err)
+            }
+          )
+        }
   }
 
 }
@@ -1563,7 +2037,7 @@ addSkill(experience):void{
 
     <div class="tab-pane fade " id="c-templateData">
         <pre class="line-numbers"><code class="language-html">&lt;mat-card class&#x3D;&quot;my-2 container-fluid&quot;&gt;
-&lt;form [formGroup]&#x3D;&quot;workExperienceForm&quot; (ngSubmit)&#x3D;&quot;saveExperienceInfo()&quot;&gt;
+&lt;form [formGroup]&#x3D;&quot;workExperienceForm&quot; &gt;
     &lt;legend&gt;Your Work Experience&lt;/legend&gt;
     &lt;div formArrayName&#x3D;&quot;experienceInfos&quot; *ngFor &#x3D; &quot;let experience of experienceInfos.controls; let i &#x3D; index&quot;&gt;
         &lt;div [formGroupName] &#x3D; &quot;i&quot;&gt;
@@ -1597,6 +2071,9 @@ addSkill(experience):void{
                     &lt;mat-datepicker-toggle matSuffix [for]&#x3D;&quot;picker2&quot;&gt;&lt;/mat-datepicker-toggle&gt;
                     &lt;mat-datepicker #picker2&gt;&lt;/mat-datepicker&gt;
                 &lt;/mat-form-field&gt;
+                       &lt;span class&#x3D;&quot;text-danger&quot; *ngIf&#x3D;&quot; (getEndDate(i).touched &amp;&amp; endDateError(getStartDate(i),getEndDate(i)) )&quot;&gt;
+                            Ending time must not be same or less than starting date
+                    &lt;/span&gt;   
             &lt;/div&gt;
 
         &lt;/div&gt;
@@ -1641,11 +2118,17 @@ addSkill(experience):void{
                                         &lt;input formControlName&#x3D;&quot;name&quot; matInput placeholder&#x3D;&quot;Skill Name&quot;&gt;
                                     &lt;/mat-form-field&gt;
                     &lt;/div&gt;
+
+                    &lt;div class&#x3D;&quot;col-md-2&quot; &gt;
+                        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-danger&quot; (click)&#x3D;&quot;removeSkill(experience,k)&quot;&gt;X&lt;/button&gt;
+                    &lt;/div&gt;
                 &lt;/div&gt;
             &lt;/div&gt;
         &lt;/div&gt;
-        &lt;div class&#x3D;&quot;mb-2&quot;&gt;
+
+        &lt;div class&#x3D;&quot;m-2&quot;&gt;
             &lt;button  mat-raised-button color&#x3D;&quot;primary&quot; (click)&#x3D;&quot;addSkill(experience)&quot;&gt;Add Skill&lt;/button&gt;
+
         &lt;/div&gt;
 
         
@@ -1774,8 +2257,8 @@ button {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><mat-card class="my-2 container-fluid"><form [formGroup]="workExperienceForm" (ngSubmit)="saveExperienceInfo()">    <legend>Your Work Experience</legend>    <div formArrayName="experienceInfos" *ngFor = "let experience of experienceInfos.controls; let i = index">        <div [formGroupName] = "i">        <div class="row">            <div class="col-md-4">                                <mat-form-field appearance="outline">                    <mat-label>Company Name</mat-label>                    <input formControlName="employerName" matInput placeholder="Company Name">                </mat-form-field>            </div>                         <div class="col-md-4">                               <mat-form-field appearance="outline">                    <mat-label>Start Date</mat-label>                    <input matInput formControlName="start" [matDatepicker]="picker1" placeholder="DD-MM-YYYY">                    <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>                    <mat-datepicker #picker1></mat-datepicker>                </mat-form-field>            </div>            <div class="col-md-4">                                <mat-form-field appearance="outline">                    <mat-label>End Date</mat-label>                    <input matInput formControlName="end" [matDatepicker]="picker2" placeholder="DD-MM-YYYY" >                    <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>                    <mat-datepicker #picker2></mat-datepicker>                </mat-form-field>            </div>        </div>        <div class="row">            <div class="col-md-4">                                <mat-form-field appearance="outline">                    <mat-label>Job Title</mat-label>                    <input formControlName="jobTitle" matInput placeholder="Job Title">                </mat-form-field>                <div class="form-group d-inline-flex p-3">                                                             <mat-checkbox formControlName="current"   [pristine]="disableEndDate(experience)" >Currently working here</mat-checkbox>                                                                                              </div>            </div>                                </div>        <hr>        <!-- <div class="row ml-2">             <div *ngFor = "let skill of selected; let i = index" class="mat-elevation-z1 mx-2 p-2" style="background-color: blue; color: white; border-radius: 5px;">                skill.name            </div>         </div> -->        <div formArrayName="skillUsed" *ngFor = "let skill of experience.get(\'skillUsed\').controls; let k = index">            <!-- reference array -->            <div [formGroupName] = "k">                <div class="row">                    <div class="col-md-4" >                                    <mat-form-field appearance="outline">                                        <mat-label>Skill</mat-label>                                        <input formControlName="name" matInput placeholder="Skill Name">                                    </mat-form-field>                    </div>                </div>            </div>        </div>        <div class="mb-2">            <button  mat-raised-button color="primary" (click)="addSkill(experience)">Add Skill</button>        </div>                <div formArrayName="references" *ngFor = "let reference of experience.get(\'references\').controls; let j = index">        <!-- reference array -->        <div [formGroupName] = "j">        <div class="row">            <div class="col-md-3">                <mat-form-field appearance="outline">                    <mat-label>Reference</mat-label>                    <input formControlName="name" matInput placeholder="Reference Name">                </mat-form-field>            </div>            <div class="col-md-3">                <mat-form-field appearance="outline">                    <mat-label>Job Title</mat-label>                    <input formControlName="jobTitle" matInput placeholder="Job Title">                </mat-form-field>            </div>            <div class="col-md-3">                <mat-form-field appearance="outline">                    <mat-label>E-mail</mat-label>                    <input formControlName="email" matInput placeholder="E-mail">                </mat-form-field>            </div>            <div class="col-md-2">                <mat-form-field appearance="outline">                    <mat-label>Relationship</mat-label>                    <input formControlName="relationship" matInput placeholder="Relationship">                </mat-form-field>            </div>            <div class="col-md-1 pt-2">                <button mat-raised-button color="warn" (click)="removeReference(experience,j)">X</button>            </div>            <!-- reference array -->        </div>        </div>        </div>                <!-- add references -->        <div class="d-flex flex-row-reverse">            <div class="p-2">                <button type="button" class="btn btn-outline-primary" (click)="addReference(experience)">+ Add Referance</button>            </div>        </div>        <div class="row">            <div class="col-md-10">                <hr>                                <mat-form-field appearance="outline">                    <mat-label>Job Description</mat-label>                    <textarea formControlName="jobDesc" matInput></textarea>                </mat-form-field>            </div>            <div class="col-md-1 pt-2">                <button mat-raised-button color="warn" (click)="removeExperience(i)">X</button>            </div>        </div>        </div>    </div><!-- add experiences --><div class="d-flex flex-row-reverse">    <div class="p-2">        <button type="button" class="btn btn-outline-primary" (click)="addExperiences()">+ Add Experience</button>    </div></div></form><div class="d-flex justify-content-center">    <button type="submit" class="btn btn-primary ml-4" (click)="saveExperienceInfo()">Save Work Experience</button></div></mat-card></div>'
-    var COMPONENTS = [{'name': 'AboutCandidateComponent', 'selector': 'app-about-candidate'},{'name': 'AboutJobComponent', 'selector': 'app-about-job'},{'name': 'AddExperienceComponent', 'selector': 'app-add-experience'},{'name': 'AllJobsComponent', 'selector': 'app-all-jobs'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CompanyListComponent', 'selector': 'app-company-list'},{'name': 'CompanyMenuComponent', 'selector': 'app-company-menu'},{'name': 'ConfirmDialogComponent', 'selector': 'app-confirm-dialog'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'CreateCompanyComponent', 'selector': 'app-create-company'},{'name': 'CreateNewEmailComponent', 'selector': 'app-create-new-email'},{'name': 'CreateNewPhoneComponent', 'selector': 'app-create-new-phone'},{'name': 'CreatePreferredJobLocationComponent', 'selector': 'app-create-preferred-job-location'},{'name': 'CustomerListComponent', 'selector': 'app-customer-list'},{'name': 'EditExperienceComponent', 'selector': 'app-edit-experience'},{'name': 'EmployeeAccountComponent', 'selector': 'app-employee-account'},{'name': 'EmployerAccountComponent', 'selector': 'app-employer-account'},{'name': 'EmployerQuestionsComponent', 'selector': 'app-employer-questions'},{'name': 'ErrordialogComponent', 'selector': 'app-errordialog'},{'name': 'ExistingReferralComponent', 'selector': 'app-existing-referral'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'ForgetpasswordComponent', 'selector': 'app-forgetpassword'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HomePageComponent', 'selector': 'app-home-page'},{'name': 'InterviewScheduleComponent', 'selector': 'app-interview-schedule'},{'name': 'IntroVideoComponent', 'selector': 'app-intro-video'},{'name': 'JobsInterestedInComponent', 'selector': 'app-jobs-interested-in'},{'name': 'KeyPointsComponent', 'selector': 'app-key-points'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'NavbarComponent', 'selector': 'app-navbar'},{'name': 'PendingReferralRequestComponent', 'selector': 'app-pending-referral-request'},{'name': 'PostJobComponent', 'selector': 'app-post-job'},{'name': 'PreferredJobLocationComponent', 'selector': 'app-preferred-job-location'},{'name': 'RefereeAccountComponent', 'selector': 'app-referee-account'},{'name': 'RefereeScoreComponent', 'selector': 'app-referee-score'},{'name': 'ReferralBonusComponent', 'selector': 'app-referral-bonus'},{'name': 'ReferralReviewPageComponent', 'selector': 'app-referral-review-page'},{'name': 'ReferralReviewRequestComponent', 'selector': 'app-referral-review-request'},{'name': 'ResetpasswordComponent', 'selector': 'app-resetpassword'},{'name': 'SavedJobsComponent', 'selector': 'app-saved-jobs'},{'name': 'SearchAgentComponent', 'selector': 'app-search-agent'},{'name': 'SignupComponent', 'selector': 'app-signup'},{'name': 'SignupconfirmationComponent', 'selector': 'app-signupconfirmation'},{'name': 'SignupLandingComponent', 'selector': 'app-signup-landing'},{'name': 'SystemVideoComponent', 'selector': 'app-system-video'},{'name': 'TestAndOtherDocumentsComponent', 'selector': 'app-test-and-other-documents'},{'name': 'UserDashboardComponent', 'selector': 'app-user-dashboard'},{'name': 'UserEducationComponent', 'selector': 'app-user-education'},{'name': 'UserMenuComponent', 'selector': 'app-user-menu'},{'name': 'UserNamePhotoComponent', 'selector': 'app-user-name-photo'},{'name': 'UserPersonalInfoComponent', 'selector': 'app-user-personal-info'},{'name': 'UserProfileComponent', 'selector': 'app-user-profile'},{'name': 'UserSkillComponent', 'selector': 'app-user-skill'},{'name': 'UserWorkExperienceComponent', 'selector': 'app-user-work-experience'}];
+        var COMPONENT_TEMPLATE = '<div><mat-card class="my-2 container-fluid"><form [formGroup]="workExperienceForm" >    <legend>Your Work Experience</legend>    <div formArrayName="experienceInfos" *ngFor = "let experience of experienceInfos.controls; let i = index">        <div [formGroupName] = "i">        <div class="row">            <div class="col-md-4">                                <mat-form-field appearance="outline">                    <mat-label>Company Name</mat-label>                    <input formControlName="employerName" matInput placeholder="Company Name">                </mat-form-field>            </div>                         <div class="col-md-4">                               <mat-form-field appearance="outline">                    <mat-label>Start Date</mat-label>                    <input matInput formControlName="start" [matDatepicker]="picker1" placeholder="DD-MM-YYYY">                    <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>                    <mat-datepicker #picker1></mat-datepicker>                </mat-form-field>            </div>            <div class="col-md-4">                                <mat-form-field appearance="outline">                    <mat-label>End Date</mat-label>                    <input matInput formControlName="end" [matDatepicker]="picker2" placeholder="DD-MM-YYYY" >                    <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>                    <mat-datepicker #picker2></mat-datepicker>                </mat-form-field>                       <span class="text-danger" *ngIf=" (getEndDate(i).touched && endDateError(getStartDate(i),getEndDate(i)) )">                            Ending time must not be same or less than starting date                    </span>               </div>        </div>        <div class="row">            <div class="col-md-4">                                <mat-form-field appearance="outline">                    <mat-label>Job Title</mat-label>                    <input formControlName="jobTitle" matInput placeholder="Job Title">                </mat-form-field>                <div class="form-group d-inline-flex p-3">                                                             <mat-checkbox formControlName="current"   [pristine]="disableEndDate(experience)" >Currently working here</mat-checkbox>                                                                                              </div>            </div>                                </div>        <hr>        <!-- <div class="row ml-2">             <div *ngFor = "let skill of selected; let i = index" class="mat-elevation-z1 mx-2 p-2" style="background-color: blue; color: white; border-radius: 5px;">                skill.name            </div>         </div> -->        <div formArrayName="skillUsed" *ngFor = "let skill of experience.get(\'skillUsed\').controls; let k = index">            <!-- reference array -->            <div [formGroupName] = "k">                <div class="row">                    <div class="col-md-4" >                                    <mat-form-field appearance="outline">                                        <mat-label>Skill</mat-label>                                        <input formControlName="name" matInput placeholder="Skill Name">                                    </mat-form-field>                    </div>                    <div class="col-md-2" >                        <button type="button" class="btn btn-danger" (click)="removeSkill(experience,k)">X</button>                    </div>                </div>            </div>        </div>        <div class="m-2">            <button  mat-raised-button color="primary" (click)="addSkill(experience)">Add Skill</button>        </div>                <div formArrayName="references" *ngFor = "let reference of experience.get(\'references\').controls; let j = index">        <!-- reference array -->        <div [formGroupName] = "j">        <div class="row">            <div class="col-md-3">                <mat-form-field appearance="outline">                    <mat-label>Reference</mat-label>                    <input formControlName="name" matInput placeholder="Reference Name">                </mat-form-field>            </div>            <div class="col-md-3">                <mat-form-field appearance="outline">                    <mat-label>Job Title</mat-label>                    <input formControlName="jobTitle" matInput placeholder="Job Title">                </mat-form-field>            </div>            <div class="col-md-3">                <mat-form-field appearance="outline">                    <mat-label>E-mail</mat-label>                    <input formControlName="email" matInput placeholder="E-mail">                </mat-form-field>            </div>            <div class="col-md-2">                <mat-form-field appearance="outline">                    <mat-label>Relationship</mat-label>                    <input formControlName="relationship" matInput placeholder="Relationship">                </mat-form-field>            </div>            <div class="col-md-1 pt-2">                <button mat-raised-button color="warn" (click)="removeReference(experience,j)">X</button>            </div>            <!-- reference array -->        </div>        </div>        </div>                <!-- add references -->        <div class="d-flex flex-row-reverse">            <div class="p-2">                <button type="button" class="btn btn-outline-primary" (click)="addReference(experience)">+ Add Referance</button>            </div>        </div>        <div class="row">            <div class="col-md-10">                <hr>                                <mat-form-field appearance="outline">                    <mat-label>Job Description</mat-label>                    <textarea formControlName="jobDesc" matInput></textarea>                </mat-form-field>            </div>            <div class="col-md-1 pt-2">                <button mat-raised-button color="warn" (click)="removeExperience(i)">X</button>            </div>        </div>        </div>    </div><!-- add experiences --><div class="d-flex flex-row-reverse">    <div class="p-2">        <button type="button" class="btn btn-outline-primary" (click)="addExperiences()">+ Add Experience</button>    </div></div></form><div class="d-flex justify-content-center">    <button type="submit" class="btn btn-primary ml-4" (click)="saveExperienceInfo()">Save Work Experience</button></div></mat-card></div>'
+    var COMPONENTS = [{'name': 'AboutCandidateComponent', 'selector': 'app-about-candidate'},{'name': 'AboutJobComponent', 'selector': 'app-about-job'},{'name': 'AddExperienceComponent', 'selector': 'app-add-experience'},{'name': 'AllJobsComponent', 'selector': 'app-all-jobs'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CompanyListComponent', 'selector': 'app-company-list'},{'name': 'CompanyMenuComponent', 'selector': 'app-company-menu'},{'name': 'ConfirmDialogComponent', 'selector': 'app-confirm-dialog'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'CreateCompanyComponent', 'selector': 'app-create-company'},{'name': 'CreateNewEmailComponent', 'selector': 'app-create-new-email'},{'name': 'CreateNewPhoneComponent', 'selector': 'app-create-new-phone'},{'name': 'CreatePreferredJobLocationComponent', 'selector': 'app-create-preferred-job-location'},{'name': 'CustomerListComponent', 'selector': 'app-customer-list'},{'name': 'EditExperienceComponent', 'selector': 'app-edit-experience'},{'name': 'EmployeeAccountComponent', 'selector': 'app-employee-account'},{'name': 'EmployerAccountComponent', 'selector': 'app-employer-account'},{'name': 'EmployerQuestionsComponent', 'selector': 'app-employer-questions'},{'name': 'Error404Component', 'selector': 'app-error404'},{'name': 'ErrordialogComponent', 'selector': 'app-errordialog'},{'name': 'ExistingReferralComponent', 'selector': 'app-existing-referral'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'ForgetpasswordComponent', 'selector': 'app-forgetpassword'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HomePageComponent', 'selector': 'app-home-page'},{'name': 'InterviewScheduleComponent', 'selector': 'app-interview-schedule'},{'name': 'IntroVideoComponent', 'selector': 'app-intro-video'},{'name': 'JobsInterestedInComponent', 'selector': 'app-jobs-interested-in'},{'name': 'KeyPointsComponent', 'selector': 'app-key-points'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'PendingReferralRequestComponent', 'selector': 'app-pending-referral-request'},{'name': 'PostJobComponent', 'selector': 'app-post-job'},{'name': 'PreferredJobLocationComponent', 'selector': 'app-preferred-job-location'},{'name': 'RefereeAccountComponent', 'selector': 'app-referee-account'},{'name': 'RefereeScoreComponent', 'selector': 'app-referee-score'},{'name': 'ReferralBonusComponent', 'selector': 'app-referral-bonus'},{'name': 'ReferralReviewPageComponent', 'selector': 'app-referral-review-page'},{'name': 'ReferralReviewRequestComponent', 'selector': 'app-referral-review-request'},{'name': 'ResetpasswordComponent', 'selector': 'app-resetpassword'},{'name': 'SavedJobsComponent', 'selector': 'app-saved-jobs'},{'name': 'SearchAgentComponent', 'selector': 'app-search-agent'},{'name': 'SignupComponent', 'selector': 'app-signup'},{'name': 'SignupconfirmationComponent', 'selector': 'app-signupconfirmation'},{'name': 'SignupLandingComponent', 'selector': 'app-signup-landing'},{'name': 'SystemVideoComponent', 'selector': 'app-system-video'},{'name': 'TestAndOtherDocumentsComponent', 'selector': 'app-test-and-other-documents'},{'name': 'UserDashboardComponent', 'selector': 'app-user-dashboard'},{'name': 'UserEducationComponent', 'selector': 'app-user-education'},{'name': 'UserMenuComponent', 'selector': 'app-user-menu'},{'name': 'UserNamePhotoComponent', 'selector': 'app-user-name-photo'},{'name': 'UserPersonalInfoComponent', 'selector': 'app-user-personal-info'},{'name': 'UserProfileComponent', 'selector': 'app-user-profile'},{'name': 'UserSkillComponent', 'selector': 'app-user-skill'},{'name': 'UserWorkExperienceComponent', 'selector': 'app-user-work-experience'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'UserWorkExperienceComponent'};
 </script>
@@ -1790,14 +2273,14 @@ button {
 
 
 
-                   
+
 
 
 
 
                    </div><div class="search-results">
     <div class="has-results">
-        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
         <ul class="search-results-list"></ul>
     </div>
     <div class="no-results">
@@ -1818,8 +2301,8 @@ button {
 
        <script src="../js/libs/custom-elements.min.js"></script>
        <script src="../js/libs/lit-html.js"></script>
-       
-       <script type="module" src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/menu-wc.js" defer></script>
        <script nomodule src="../js/menu-wc_es5.js" defer></script>
 
        <script src="../js/libs/bootstrap-native.js"></script>

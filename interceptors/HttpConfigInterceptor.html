@@ -118,7 +118,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/interceptor/httpconfig.interceptor.ts:18</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/interceptor/httpconfig.interceptor.ts:19</a></div>
                             </td>
                         </tr>
 
@@ -193,8 +193,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="24"
-                            class="link-to-prism">src/app/interceptor/httpconfig.interceptor.ts:24</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="23"
+                            class="link-to-prism">src/app/interceptor/httpconfig.interceptor.ts:23</a></div>
                 </td>
             </tr>
 
@@ -204,6 +204,7 @@
 
                     <div class="io-description">
                         <b>Parameters :</b>
+                        
                         <table class="params">
                             <thead>
                                 <tr>
@@ -279,7 +280,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/interceptor/httpconfig.interceptor.ts:20</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/app/interceptor/httpconfig.interceptor.ts:21</a></div>
                         </td>
                     </tr>
 
@@ -295,12 +296,12 @@
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
 import { ErrordialogService } from &#x27;../services/errordialog.service&#x27;;
 import {
-  HttpInterceptor,
-  HttpRequest,
-  HttpResponse,
-  HttpHandler,
-  HttpEvent,
-  HttpErrorResponse,
+    HttpInterceptor,
+    HttpRequest,
+    HttpResponse,
+    HttpHandler,
+    HttpEvent,
+    HttpErrorResponse
 } from &#x27;@angular/common/http&#x27;;
 
 import { Observable, throwError } from &#x27;rxjs&#x27;;
@@ -308,49 +309,44 @@ import { map, catchError, retry } from &#x27;rxjs/operators&#x27;;
 import { Router } from &#x27;@angular/router&#x27;;
 import { UserDashboardService } from &#x27;../services/user-dashboard.service&#x27;;
 
+
 @Injectable()
 export class HttpConfigInterceptor implements HttpInterceptor {
-  constructor(
-    public errorDialogService: ErrordialogService,
-    private router: Router
-  ) {}
 
-  intercept(
-    request: HttpRequest&lt;any&gt;,
-    next: HttpHandler
-  ): Observable&lt;HttpEvent&lt;any&gt;&gt; {
-    // ...
+    constructor(public errorDialogService: ErrordialogService, private router:Router) { }
 
-    return next.handle(request).pipe(
-      catchError((error: HttpErrorResponse) &#x3D;&gt; {
-        console.log(&#x27;atual error:&#x27;);
-        console.log(error);
-        let data &#x3D; {};
-        data &#x3D; {
-          reason: error.error,
-          status: error.status,
-        };
-        if (error.error &#x3D;&#x3D;&#x3D; &#x27;invalid token&#x27;) {
-          this.errorDialogService.openDialog(data);
-          setTimeout(() &#x3D;&gt; {
-            this.router.navigate([&#x27;home&#x27;]);
-          }, 2000);
-        } else if (error.status &#x3D;&#x3D;&#x3D; 400 || error.status &#x3D;&#x3D;&#x3D; 404) {
-          this.errorDialogService.openDialog(data);
-
-          setTimeout(() &#x3D;&gt; {
-            this.router.navigate([&#x27;home&#x27;]);
-          }, 2000);
-        } else {
-          this.errorDialogService.openDialog(data);
-        }
-
-        return throwError(error);
-      })
-    );
-  }
-}
-</code></pre>
+    intercept(request: HttpRequest&lt;any&gt;, next: HttpHandler): Observable&lt;HttpEvent&lt;any&gt;&gt; {
+      // ...
+      
+      return next.handle(request)
+      .pipe(
+        
+        
+        catchError((error: HttpErrorResponse) &#x3D;&gt; {
+            let data &#x3D; {};
+            data &#x3D; {
+                &quot;reason&quot;: error.error,
+                &quot;status&quot;: error.status
+            };
+            console.error(error)
+            if(error.error &#x3D;&#x3D;&#x3D; &quot;invalid token&quot;){
+                this.errorDialogService.openDialog(data);
+                setTimeout(()&#x3D;&gt;{
+                    this.router.navigate([&quot;home&quot;])
+                }, 2000)
+            }
+            else if(error.status &#x3D;&#x3D;&#x3D; 400 || error.status &#x3D;&#x3D;&#x3D; 404 ){
+                setTimeout(()&#x3D;&gt;{
+                  // this.router.navigate([&quot;error&quot;])
+                }, 2000)
+                
+            }
+            
+            
+            return throwError(error);
+        }));
+    }
+}</code></pre>
     </div>
 </div>
 
@@ -359,14 +355,14 @@ export class HttpConfigInterceptor implements HttpInterceptor {
 
 
 
-                   
+
 
 
 
 
                    </div><div class="search-results">
     <div class="has-results">
-        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
         <ul class="search-results-list"></ul>
     </div>
     <div class="no-results">
@@ -387,8 +383,8 @@ export class HttpConfigInterceptor implements HttpInterceptor {
 
        <script src="../js/libs/custom-elements.min.js"></script>
        <script src="../js/libs/lit-html.js"></script>
-       
-       <script type="module" src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/menu-wc.js" defer></script>
        <script nomodule src="../js/menu-wc_es5.js" defer></script>
 
        <script src="../js/libs/bootstrap-native.js"></script>

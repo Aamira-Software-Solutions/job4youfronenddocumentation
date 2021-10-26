@@ -134,14 +134,17 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
+                                <a href="#fileName" >fileName</a>
+                            </li>
+                            <li>
                                 <a href="#filePath" >filePath</a>
+                            </li>
+                            <li>
+                                <a href="#imageToShow" >imageToShow</a>
                             </li>
                             <li>
                                     <span class="modifier">Public</span>
                                 <a href="#message" >message</a>
-                            </li>
-                            <li>
-                                <a href="#selectedFile" >selectedFile</a>
                             </li>
                         </ul>
                     </td>
@@ -156,13 +159,19 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
+                                <a href="#createImageFromBlob" >createImageFromBlob</a>
+                            </li>
+                            <li>
                                 <a href="#editProfile" >editProfile</a>
+                            </li>
+                            <li>
+                                <a href="#getImage" >getImage</a>
                             </li>
                             <li>
                                 <a href="#ngOnInit" >ngOnInit</a>
                             </li>
                             <li>
-                                <a href="#onFileChanged" >onFileChanged</a>
+                                <a href="#onFileSelected" >onFileSelected</a>
                             </li>
                             <li>
                                 <a href="#onUpload" >onUpload</a>
@@ -199,12 +208,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>)</code>
+<code>constructor(router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, userservice: <a href="../injectables/UserProfileService.html" target="_self">UserProfileService</a>, confirmDialog: <a href="../injectables/DialogService.html" target="_self">DialogService</a>)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/components/user-profile/user-name-photo/user-name-photo.component.ts:14</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/components/user-profile/user-name-photo/user-name-photo.component.ts:17</a></div>
                             </td>
                         </tr>
 
@@ -226,6 +235,30 @@
                                                   
                                                         <td>
                                                                         <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>userservice</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UserProfileService.html" target="_self" >UserProfileService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>confirmDialog</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/DialogService.html" target="_self" >DialogService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -260,7 +293,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/app/components/user-profile/user-name-photo/user-name-photo.component.ts:10</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/components/user-profile/user-name-photo/user-name-photo.component.ts:12</a></div>
                             </td>
                         </tr>
             </tbody>
@@ -274,6 +307,75 @@
     <h3 id="methods">
         Methods
     </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createImageFromBlob"></a>
+                    <span class="name">
+                        <span ><b>createImageFromBlob</b></span>
+                        <a href="#createImageFromBlob"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createImageFromBlob(image: Blob)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="36"
+                            class="link-to-prism">src/app/components/user-profile/user-name-photo/user-name-photo.component.ts:36</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>image</td>
+                                    <td>
+                                            <code>Blob</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
     <table class="table table-sm table-bordered">
         <tbody>
             <tr>
@@ -294,8 +396,45 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="19"
-                            class="link-to-prism">src/app/components/user-profile/user-name-photo/user-name-photo.component.ts:19</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="48"
+                            class="link-to-prism">src/app/components/user-profile/user-name-photo/user-name-photo.component.ts:48</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getImage"></a>
+                    <span class="name">
+                        <span ><b>getImage</b></span>
+                        <a href="#getImage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getImage()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="24"
+                            class="link-to-prism">src/app/components/user-profile/user-name-photo/user-name-photo.component.ts:24</a></div>
                 </td>
             </tr>
 
@@ -331,8 +470,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="17"
-                            class="link-to-prism">src/app/components/user-profile/user-name-photo/user-name-photo.component.ts:17</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="20"
+                            class="link-to-prism">src/app/components/user-profile/user-name-photo/user-name-photo.component.ts:20</a></div>
                 </td>
             </tr>
 
@@ -352,24 +491,24 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="onFileChanged"></a>
+                    <a name="onFileSelected"></a>
                     <span class="name">
-                        <span ><b>onFileChanged</b></span>
-                        <a href="#onFileChanged"><span class="icon ion-ios-link"></span></a>
+                        <span ><b>onFileSelected</b></span>
+                        <a href="#onFileSelected"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>onFileChanged(event)</code>
+<code>onFileSelected(event)</code>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="22"
-                            class="link-to-prism">src/app/components/user-profile/user-name-photo/user-name-photo.component.ts:22</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="51"
+                            class="link-to-prism">src/app/components/user-profile/user-name-photo/user-name-photo.component.ts:51</a></div>
                 </td>
             </tr>
 
@@ -379,6 +518,7 @@
 
                     <div class="io-description">
                         <b>Parameters :</b>
+                        
                         <table class="params">
                             <thead>
                                 <tr>
@@ -425,15 +565,15 @@
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>onUpload()</code>
+<code>onUpload(file)</code>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="28"
-                            class="link-to-prism">src/app/components/user-profile/user-name-photo/user-name-photo.component.ts:28</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="64"
+                            class="link-to-prism">src/app/components/user-profile/user-name-photo/user-name-photo.component.ts:64</a></div>
                 </td>
             </tr>
 
@@ -442,8 +582,36 @@
                 <td class="col-md-4">
 
                     <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>file</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
                         <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
+                    </div>
+                    <div class="io-description">
+                        
                     </div>
                 </td>
             </tr>
@@ -455,6 +623,37 @@
     <h3 id="inputs">
         Properties
     </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fileName"></a>
+                    <span class="name">
+                        <span ><b>fileName</b></span>
+                        <a href="#fileName"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/components/user-profile/user-name-photo/user-name-photo.component.ts:14</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
     <table class="table table-sm table-bordered">
         <tbody>
             <tr>
@@ -479,7 +678,33 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/components/user-profile/user-name-photo/user-name-photo.component.ts:13</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/components/user-profile/user-name-photo/user-name-photo.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="imageToShow"></a>
+                    <span class="name">
+                        <span ><b>imageToShow</b></span>
+                        <a href="#imageToShow"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/components/user-profile/user-name-photo/user-name-photo.component.ts:16</a></div>
                         </td>
                     </tr>
 
@@ -506,38 +731,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/components/user-profile/user-name-photo/user-name-photo.component.ts:14</a></div>
-                        </td>
-                    </tr>
-
-
-        </tbody>
-    </table>
-    <table class="table table-sm table-bordered">
-        <tbody>
-            <tr>
-                <td class="col-md-4">
-                    <a name="selectedFile"></a>
-                    <span class="name">
-                        <span ><b>selectedFile</b></span>
-                        <a href="#selectedFile"><span class="icon ion-ios-link"></span></a>
-                    </span>
-                </td>
-            </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Type : </i>    <code>null</code>
-
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <i>Default value : </i><code>null</code>
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/components/user-profile/user-name-photo/user-name-photo.component.ts:12</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/components/user-profile/user-name-photo/user-name-photo.component.ts:17</a></div>
                         </td>
                     </tr>
 
@@ -552,6 +746,8 @@
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, Input } from &#x27;@angular/core&#x27;;
 import { Router } from &#x27;@angular/router&#x27;;
+import { DialogService } from &#x27;src/app/services/dialog.service&#x27;;
+import { UserProfileService } from &#x27;src/app/services/user-profile.service&#x27;;
 
 @Component({
   selector: &#x27;app-user-name-photo&#x27;,
@@ -561,35 +757,75 @@ import { Router } from &#x27;@angular/router&#x27;;
 export class UserNamePhotoComponent implements OnInit {
   @Input() caption: string;
 
-  selectedFile &#x3D; null;
+  fileName &#x3D; &#x27;&#x27;;
   filePath: string &#x3D; &#x27;https://vgraphs.com/images/agents/sage-avatar.jpg&#x27;; //
+  imageToShow:any;
   public message: string;
-  constructor(private router: Router) {}
+  constructor(private router: Router, private userservice: UserProfileService, private confirmDialog: DialogService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.getImage();
+  }
+
+  getImage(){
+    this.userservice.getPhoto().subscribe(
+      (success)&#x3D;&gt;{
+        console.log(success)
+        this.createImageFromBlob(success)
+      },
+      (err)&#x3D;&gt;{
+        console.log(err)
+      }
+    )
+  }
+
+  createImageFromBlob(image: Blob) {
+    let reader &#x3D; new FileReader();
+    reader.addEventListener(&quot;load&quot;, () &#x3D;&gt; {
+       this.imageToShow &#x3D; reader.result;
+       console.log(this.imageToShow)
+    }, false);
+ 
+    if (image) {
+       reader.readAsDataURL(image);
+    }
+ }
 
   editProfile() {
     this.router.navigate([&#x27;../userprofile&#x27;]);
   }
-  onFileChanged(event) {
-    this.selectedFile &#x3D; &lt;File&gt;event.target.files[0];
+  onFileSelected(event) {
 
-    this.onUpload();
+    const file:File &#x3D; event.target.files[0];
+    var imageType &#x3D; /image.*/;
+    if(file &amp;&amp; file.type.match(imageType)){
+      this.fileName &#x3D; file.name;
+      this.onUpload(file);
+    }
+    
+
+    
   }
 
-  onUpload() {
+  onUpload(file) {
     const reader &#x3D; new FileReader();
     reader.onload &#x3D; () &#x3D;&gt; {
-      this.filePath &#x3D; reader.result as string;
+      this.imageToShow &#x3D; reader.result as string;
     };
-    reader.readAsDataURL(this.selectedFile);
+    reader.readAsDataURL(file);
 
-    ///
+
     const fd &#x3D; new FormData();
-    fd.append(&#x27;Image&#x27;, this.selectedFile, this.selectedFile.name);
-    console.log(fd);
+    fd.append(&#x27;Image&#x27;, file);
 
-    //this.gamedataService.uploadPhoto(fd).subscribe((res) &#x3D;&gt; {});
+    this.userservice.sendPhoto(fd).subscribe(
+      res&#x3D;&gt;{
+        this.confirmDialog.openConfirmDialog(res.message)
+      },
+      err&#x3D;&gt;{
+        console.log(err)
+      }
+    )
   }
 
   //backend implementation nedded for help https://www.youtube.com/watch?v&#x3D;MGAjcZNkl3M
@@ -603,12 +839,12 @@ export class UserNamePhotoComponent implements OnInit {
     &lt;input
       style&#x3D;&quot;display: none&quot;
       type&#x3D;&quot;file&quot;
-      (change)&#x3D;&quot;onFileChanged($event)&quot;
+      (change)&#x3D;&quot;onFileSelected($event)&quot;
       #fileInput
     /&gt;
     &lt;button class&#x3D;&quot;imgbtn&quot;&gt;
       &lt;img
-        [src]&#x3D;&quot;filePath&quot;
+      [src]&#x3D;&quot;imageToShow&quot;
         alt&#x3D;&quot;Avatar&quot;
         class&#x3D;&quot;avatar&quot;
         (click)&#x3D;&quot;fileInput.click()&quot;
@@ -668,8 +904,8 @@ export class UserNamePhotoComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div class="row">  <div class="offset-md-5 text-center">    <input      style="display: none"      type="file"      (change)="onFileChanged($event)"      #fileInput    />    <button class="imgbtn">      <img        [src]="filePath"        alt="Avatar"        class="avatar"        (click)="fileInput.click()"      />    </button>  </div></div><div class="row">  <div class="offset-md-5 text-center">    <span style="font-size: 30px">{{ caption }}</span>    <button      mat-icon-button      mat-raised-button      title="Edit profile"      (click)="editProfile()"    >      <span class="material-icons"> edit </span>    </button>  </div></div></div>'
-    var COMPONENTS = [{'name': 'AboutCandidateComponent', 'selector': 'app-about-candidate'},{'name': 'AboutJobComponent', 'selector': 'app-about-job'},{'name': 'AddExperienceComponent', 'selector': 'app-add-experience'},{'name': 'AllJobsComponent', 'selector': 'app-all-jobs'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CompanyListComponent', 'selector': 'app-company-list'},{'name': 'CompanyMenuComponent', 'selector': 'app-company-menu'},{'name': 'ConfirmDialogComponent', 'selector': 'app-confirm-dialog'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'CreateCompanyComponent', 'selector': 'app-create-company'},{'name': 'CreateNewEmailComponent', 'selector': 'app-create-new-email'},{'name': 'CreateNewPhoneComponent', 'selector': 'app-create-new-phone'},{'name': 'CreatePreferredJobLocationComponent', 'selector': 'app-create-preferred-job-location'},{'name': 'CustomerListComponent', 'selector': 'app-customer-list'},{'name': 'EditExperienceComponent', 'selector': 'app-edit-experience'},{'name': 'EmployeeAccountComponent', 'selector': 'app-employee-account'},{'name': 'EmployerAccountComponent', 'selector': 'app-employer-account'},{'name': 'EmployerQuestionsComponent', 'selector': 'app-employer-questions'},{'name': 'ErrordialogComponent', 'selector': 'app-errordialog'},{'name': 'ExistingReferralComponent', 'selector': 'app-existing-referral'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'ForgetpasswordComponent', 'selector': 'app-forgetpassword'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HomePageComponent', 'selector': 'app-home-page'},{'name': 'InterviewScheduleComponent', 'selector': 'app-interview-schedule'},{'name': 'IntroVideoComponent', 'selector': 'app-intro-video'},{'name': 'JobsInterestedInComponent', 'selector': 'app-jobs-interested-in'},{'name': 'KeyPointsComponent', 'selector': 'app-key-points'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'NavbarComponent', 'selector': 'app-navbar'},{'name': 'PendingReferralRequestComponent', 'selector': 'app-pending-referral-request'},{'name': 'PostJobComponent', 'selector': 'app-post-job'},{'name': 'PreferredJobLocationComponent', 'selector': 'app-preferred-job-location'},{'name': 'RefereeAccountComponent', 'selector': 'app-referee-account'},{'name': 'RefereeScoreComponent', 'selector': 'app-referee-score'},{'name': 'ReferralBonusComponent', 'selector': 'app-referral-bonus'},{'name': 'ReferralReviewPageComponent', 'selector': 'app-referral-review-page'},{'name': 'ReferralReviewRequestComponent', 'selector': 'app-referral-review-request'},{'name': 'ResetpasswordComponent', 'selector': 'app-resetpassword'},{'name': 'SavedJobsComponent', 'selector': 'app-saved-jobs'},{'name': 'SearchAgentComponent', 'selector': 'app-search-agent'},{'name': 'SignupComponent', 'selector': 'app-signup'},{'name': 'SignupconfirmationComponent', 'selector': 'app-signupconfirmation'},{'name': 'SignupLandingComponent', 'selector': 'app-signup-landing'},{'name': 'SystemVideoComponent', 'selector': 'app-system-video'},{'name': 'TestAndOtherDocumentsComponent', 'selector': 'app-test-and-other-documents'},{'name': 'UserDashboardComponent', 'selector': 'app-user-dashboard'},{'name': 'UserEducationComponent', 'selector': 'app-user-education'},{'name': 'UserMenuComponent', 'selector': 'app-user-menu'},{'name': 'UserNamePhotoComponent', 'selector': 'app-user-name-photo'},{'name': 'UserPersonalInfoComponent', 'selector': 'app-user-personal-info'},{'name': 'UserProfileComponent', 'selector': 'app-user-profile'},{'name': 'UserSkillComponent', 'selector': 'app-user-skill'},{'name': 'UserWorkExperienceComponent', 'selector': 'app-user-work-experience'}];
+        var COMPONENT_TEMPLATE = '<div><div class="row">  <div class="offset-md-5 text-center">    <input      style="display: none"      type="file"      (change)="onFileSelected($event)"      #fileInput    />    <button class="imgbtn">      <img      [src]="imageToShow"        alt="Avatar"        class="avatar"        (click)="fileInput.click()"      />    </button>  </div></div><div class="row">  <div class="offset-md-5 text-center">    <span style="font-size: 30px">{{ caption }}</span>    <button      mat-icon-button      mat-raised-button      title="Edit profile"      (click)="editProfile()"    >      <span class="material-icons"> edit </span>    </button>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AboutCandidateComponent', 'selector': 'app-about-candidate'},{'name': 'AboutJobComponent', 'selector': 'app-about-job'},{'name': 'AddExperienceComponent', 'selector': 'app-add-experience'},{'name': 'AllJobsComponent', 'selector': 'app-all-jobs'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CompanyListComponent', 'selector': 'app-company-list'},{'name': 'CompanyMenuComponent', 'selector': 'app-company-menu'},{'name': 'ConfirmDialogComponent', 'selector': 'app-confirm-dialog'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'CreateCompanyComponent', 'selector': 'app-create-company'},{'name': 'CreateNewEmailComponent', 'selector': 'app-create-new-email'},{'name': 'CreateNewPhoneComponent', 'selector': 'app-create-new-phone'},{'name': 'CreatePreferredJobLocationComponent', 'selector': 'app-create-preferred-job-location'},{'name': 'CustomerListComponent', 'selector': 'app-customer-list'},{'name': 'EditExperienceComponent', 'selector': 'app-edit-experience'},{'name': 'EmployeeAccountComponent', 'selector': 'app-employee-account'},{'name': 'EmployerAccountComponent', 'selector': 'app-employer-account'},{'name': 'EmployerQuestionsComponent', 'selector': 'app-employer-questions'},{'name': 'Error404Component', 'selector': 'app-error404'},{'name': 'ErrordialogComponent', 'selector': 'app-errordialog'},{'name': 'ExistingReferralComponent', 'selector': 'app-existing-referral'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'ForgetpasswordComponent', 'selector': 'app-forgetpassword'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HomePageComponent', 'selector': 'app-home-page'},{'name': 'InterviewScheduleComponent', 'selector': 'app-interview-schedule'},{'name': 'IntroVideoComponent', 'selector': 'app-intro-video'},{'name': 'JobsInterestedInComponent', 'selector': 'app-jobs-interested-in'},{'name': 'KeyPointsComponent', 'selector': 'app-key-points'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'PendingReferralRequestComponent', 'selector': 'app-pending-referral-request'},{'name': 'PostJobComponent', 'selector': 'app-post-job'},{'name': 'PreferredJobLocationComponent', 'selector': 'app-preferred-job-location'},{'name': 'RefereeAccountComponent', 'selector': 'app-referee-account'},{'name': 'RefereeScoreComponent', 'selector': 'app-referee-score'},{'name': 'ReferralBonusComponent', 'selector': 'app-referral-bonus'},{'name': 'ReferralReviewPageComponent', 'selector': 'app-referral-review-page'},{'name': 'ReferralReviewRequestComponent', 'selector': 'app-referral-review-request'},{'name': 'ResetpasswordComponent', 'selector': 'app-resetpassword'},{'name': 'SavedJobsComponent', 'selector': 'app-saved-jobs'},{'name': 'SearchAgentComponent', 'selector': 'app-search-agent'},{'name': 'SignupComponent', 'selector': 'app-signup'},{'name': 'SignupconfirmationComponent', 'selector': 'app-signupconfirmation'},{'name': 'SignupLandingComponent', 'selector': 'app-signup-landing'},{'name': 'SystemVideoComponent', 'selector': 'app-system-video'},{'name': 'TestAndOtherDocumentsComponent', 'selector': 'app-test-and-other-documents'},{'name': 'UserDashboardComponent', 'selector': 'app-user-dashboard'},{'name': 'UserEducationComponent', 'selector': 'app-user-education'},{'name': 'UserMenuComponent', 'selector': 'app-user-menu'},{'name': 'UserNamePhotoComponent', 'selector': 'app-user-name-photo'},{'name': 'UserPersonalInfoComponent', 'selector': 'app-user-personal-info'},{'name': 'UserProfileComponent', 'selector': 'app-user-profile'},{'name': 'UserSkillComponent', 'selector': 'app-user-skill'},{'name': 'UserWorkExperienceComponent', 'selector': 'app-user-work-experience'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'UserNamePhotoComponent'};
 </script>
@@ -684,14 +920,14 @@ export class UserNamePhotoComponent implements OnInit {
 
 
 
-                   
+
 
 
 
 
                    </div><div class="search-results">
     <div class="has-results">
-        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
         <ul class="search-results-list"></ul>
     </div>
     <div class="no-results">
@@ -712,8 +948,8 @@ export class UserNamePhotoComponent implements OnInit {
 
        <script src="../js/libs/custom-elements.min.js"></script>
        <script src="../js/libs/lit-html.js"></script>
-       
-       <script type="module" src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/menu-wc.js" defer></script>
        <script nomodule src="../js/menu-wc_es5.js" defer></script>
 
        <script src="../js/libs/bootstrap-native.js"></script>
